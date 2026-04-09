@@ -36,8 +36,8 @@ body {
   font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
   font-weight: 400;
   color: var(--text);
-  font-size: 16px;
-  line-height: 1.95;
+  font-size: 17px;
+  line-height: 1.7;
   background: var(--bg);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -71,10 +71,10 @@ mark {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 52px;
-  padding: 14px 32px;
+  min-height: 54px;
+  padding: 15px 34px;
   border-radius: 10px;
-  font-size: 0.98rem;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -140,9 +140,9 @@ mark {
 
 .section-lead {
   text-align: center;
-  font-size: 1rem;
+  font-size: 17px;
   color: var(--text-soft);
-  line-height: 2;
+  line-height: 1.8;
   margin-bottom: 56px;
   font-weight: 400;
 }
@@ -180,7 +180,7 @@ mark {
 
 .nav__logo {
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.06em;
   white-space: nowrap;
@@ -196,7 +196,7 @@ mark {
 .nav__menu a {
   color: var(--text-soft);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.04em;
   transition: color 0.3s;
@@ -248,12 +248,12 @@ mark {
   content: "";
   position: absolute;
   inset: 0;
-  /* テキストの視認性確保用ダークオーバーレイ */
+  /* 写真が透ける薄めのオーバーレイ */
   background: linear-gradient(
     135deg,
-    rgba(15, 23, 42, 0.72) 0%,
-    rgba(30, 58, 138, 0.62) 50%,
-    rgba(30, 64, 175, 0.68) 100%
+    rgba(15, 23, 42, 0.45) 0%,
+    rgba(30, 64, 175, 0.38) 50%,
+    rgba(37, 99, 235, 0.42) 100%
   );
 }
 
@@ -261,7 +261,8 @@ mark {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.28);
+  /* テキスト可読性確保用の薄いダーク */
+  background: rgba(0, 0, 0, 0.18);
 }
 
 .hero__shape {
@@ -306,9 +307,9 @@ mark {
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.28);
   color: #fff;
-  font-size: 0.84rem;
+  font-size: 15px;
   font-weight: 500;
-  padding: 8px 20px;
+  padding: 9px 22px;
   border-radius: 999px;
   letter-spacing: 0.08em;
   margin-bottom: 28px;
@@ -319,19 +320,19 @@ mark {
 }
 
 .hero__title {
-  font-size: 2.7rem;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.55;
-  letter-spacing: 0.06em;
-  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 28px;
 }
 
 .hero__subtitle {
-  font-size: 1.08rem;
+  font-size: 19px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.9;
   opacity: 0.95;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .hero__ctas {
@@ -435,7 +436,7 @@ mark {
 }
 
 .trust__card h3 {
-  font-size: 1.15rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 14px;
@@ -444,14 +445,14 @@ mark {
 }
 
 .trust__card > p {
-  font-size: 0.92rem;
+  font-size: 16px;
   color: var(--text-soft);
-  line-height: 1.9;
+  line-height: 1.85;
   margin-bottom: 18px;
 }
 
 .trust__micro {
-  font-size: 0.78rem;
+  font-size: 15px;
   color: var(--text-muted);
   padding-top: 16px;
   border-top: 1px dashed var(--border);
@@ -470,7 +471,7 @@ mark {
 
 .trust__details > p {
   overflow: hidden;
-  font-size: 0.88rem;
+  font-size: 16px;
   color: var(--text-soft);
   line-height: 1.85;
   text-align: left;
@@ -502,13 +503,13 @@ mark {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 44px;
-  padding: 10px 22px;
+  min-height: 46px;
+  padding: 11px 24px;
   background: #fff;
   border: 1.5px solid var(--primary);
   border-radius: 999px;
   color: var(--primary);
-  font-size: 0.86rem;
+  font-size: 16px;
   font-weight: 700;
   font-family: inherit;
   letter-spacing: 0.04em;
@@ -573,7 +574,7 @@ mark {
 
 .about__role {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: 500;
   color: var(--primary);
   background: var(--primary-pale);
@@ -584,7 +585,7 @@ mark {
 }
 
 .about__heading {
-  font-size: 1.4rem;
+  font-size: 24px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 22px;
@@ -593,9 +594,9 @@ mark {
 }
 
 .about__text {
-  font-size: 0.96rem;
+  font-size: 17px;
   color: var(--text-soft);
-  line-height: 2;
+  line-height: 1.9;
   margin-bottom: 14px;
 }
 
@@ -612,7 +613,7 @@ mark {
 }
 
 .achievements__title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 24px;
@@ -681,9 +682,9 @@ mark {
 }
 
 .achievement-card p {
-  font-size: 0.95rem;
+  font-size: 16px;
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -770,7 +771,7 @@ mark {
 }
 
 .recommend__text {
-  font-size: 0.98rem;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
   line-height: 1.7;
@@ -779,7 +780,7 @@ mark {
 }
 
 .recommend__note {
-  font-size: 0.82rem;
+  font-size: 15px;
   color: var(--text-mute);
   line-height: 1.7;
   letter-spacing: 0.02em;
@@ -868,7 +869,7 @@ mark {
 }
 
 .services__card h3 {
-  font-size: 1.08rem;
+  font-size: 19px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 14px;
@@ -876,7 +877,7 @@ mark {
 }
 
 .services__card p {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: var(--text-soft);
   line-height: 1.9;
   margin-bottom: 22px;
@@ -888,15 +889,15 @@ mark {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 0.85rem;
+  font-size: 16px;
   font-weight: 700;
   color: var(--primary);
   letter-spacing: 0.04em;
-  padding: 10px 20px;
+  padding: 11px 22px;
   border: 1.5px solid var(--primary);
   border-radius: 999px;
   transition: all 0.3s;
-  min-height: 40px;
+  min-height: 46px;
   align-self: center;
 }
 
@@ -932,13 +933,13 @@ mark {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 46px;
-  padding: 10px 22px;
+  min-height: 48px;
+  padding: 12px 24px;
   background: #fff;
   border: 1.5px solid var(--border);
   border-radius: 999px;
   color: var(--text-soft);
-  font-size: 0.9rem;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -1035,7 +1036,7 @@ mark {
   position: absolute;
   top: 14px;
   right: 14px;
-  font-size: 0.68rem;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--primary);
@@ -1064,7 +1065,7 @@ mark {
 }
 
 .wcard__title {
-  font-size: 1rem;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
   line-height: 1.55;
@@ -1073,11 +1074,11 @@ mark {
 }
 
 .wcard--featured .wcard__title {
-  font-size: 1.05rem;
+  font-size: 18px;
 }
 
 .wcard__who {
-  font-size: 0.78rem;
+  font-size: 15px;
   color: var(--text-mute);
   font-weight: 500;
   margin-bottom: 12px;
@@ -1085,9 +1086,9 @@ mark {
 }
 
 .wcard__desc {
-  font-size: 0.88rem;
+  font-size: 16px;
   color: var(--text-soft);
-  line-height: 1.85;
+  line-height: 1.8;
   margin-bottom: 18px;
   flex: 1;
 }
@@ -1096,10 +1097,10 @@ mark {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  padding: 12px 16px;
+  padding: 13px 16px;
   background: #f0f7ff;
   border-radius: 10px;
-  font-size: 0.82rem;
+  font-size: 15px;
   color: var(--primary-dark);
   line-height: 1.65;
 }
@@ -1125,13 +1126,13 @@ mark {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  min-height: 46px;
-  padding: 12px 32px;
+  min-height: 48px;
+  padding: 13px 34px;
   background: #fff;
   border: 1.5px solid var(--primary);
   border-radius: 999px;
   color: var(--primary);
-  font-size: 0.9rem;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -1173,12 +1174,12 @@ mark {
 }
 
 .pricing__lead {
-  font-size: 1rem;
+  font-size: 17px;
   color: var(--text-soft);
-  line-height: 2;
+  line-height: 1.9;
   margin: 0 auto 32px;
   text-align: center;
-  max-width: 560px;
+  max-width: 600px;
 }
 
 .pricing__highlight {
@@ -1189,7 +1190,7 @@ mark {
   background: #fbfcff;
   border: 2px solid var(--primary-pale);
   color: var(--primary);
-  font-size: 1.3rem;
+  font-size: 22px;
   font-weight: 700;
   padding: 22px 40px;
   border-radius: 16px;
@@ -1211,11 +1212,11 @@ mark {
 }
 
 .pricing__sub {
-  font-size: 0.95rem;
+  font-size: 16px;
   color: var(--text-soft);
-  line-height: 1.95;
+  line-height: 1.85;
   text-align: center;
-  max-width: 560px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -1265,12 +1266,12 @@ mark {
 
 .flow__num {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.15em;
   color: var(--primary);
   background: var(--primary-pale);
-  padding: 4px 14px;
+  padding: 5px 16px;
   border-radius: 999px;
   margin-bottom: 14px;
 }
@@ -1289,7 +1290,7 @@ mark {
 }
 
 .flow__step h3 {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 10px;
@@ -1297,9 +1298,9 @@ mark {
 }
 
 .flow__step p {
-  font-size: 0.86rem;
+  font-size: 16px;
   color: var(--text-soft);
-  line-height: 1.85;
+  line-height: 1.8;
 }
 
 /* ========== お問い合わせ ========== */
@@ -1319,7 +1320,7 @@ mark {
 }
 
 .cta-text {
-  font-size: 1.25rem;
+  font-size: 22px;
   font-weight: 700;
   color: var(--primary);
   margin: 0 auto 14px;
@@ -1331,9 +1332,9 @@ mark {
 
 .contact__lead {
   text-align: center;
-  font-size: 1rem;
+  font-size: 17px;
   color: var(--text-soft);
-  line-height: 2;
+  line-height: 1.85;
   margin: 0 auto;
   width: 100%;
 }
@@ -1393,7 +1394,7 @@ mark {
 }
 
 .contact__card-heading {
-  font-size: 1.15rem;
+  font-size: 19px;
   color: var(--text);
   font-weight: 700;
   margin-bottom: 14px;
@@ -1401,7 +1402,7 @@ mark {
 }
 
 .contact__card-value {
-  font-size: 0.92rem;
+  font-size: 16px;
   color: var(--text-soft);
   line-height: 1.7;
   margin-bottom: 22px;
@@ -1410,7 +1411,7 @@ mark {
 }
 
 .contact__card-note {
-  font-size: 0.8rem;
+  font-size: 15px;
   color: var(--text-mute);
   margin-top: 14px;
   line-height: 1.7;
@@ -1422,13 +1423,13 @@ mark {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 52px;
-  min-width: 200px;
-  padding: 14px 32px;
+  min-height: 54px;
+  min-width: 210px;
+  padding: 15px 34px;
   color: #fff;
   background: var(--primary);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.04em;
   border-radius: 12px;
@@ -1475,10 +1476,10 @@ mark {
 }
 
 .contact__qr-note {
-  font-size: 0.85rem;
+  font-size: 15px;
   color: var(--text-soft);
-  line-height: 1.85;
-  margin-top: 8px;
+  line-height: 1.8;
+  margin: 8px 0 18px;
   text-align: center;
   padding: 14px 16px;
   background: var(--bg-alt);
@@ -1579,7 +1580,12 @@ mark {
   }
 
   .hero__title {
-    font-size: 2.1rem;
+    font-size: 38px;
+    line-height: 1.55;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
   }
 
   .trust__grid {
@@ -1690,17 +1696,18 @@ mark {
   }
 
   .hero__title {
-    font-size: 1.55rem;
-    line-height: 1.7;
+    font-size: 32px;
+    line-height: 1.55;
   }
 
   .hero__subtitle {
-    font-size: 0.95rem;
+    font-size: 17px;
+    line-height: 1.9;
   }
 
   .hero__area {
-    font-size: 0.76rem;
-    padding: 6px 16px;
+    font-size: 14px;
+    padding: 7px 18px;
   }
 
   .hero__ctas {
