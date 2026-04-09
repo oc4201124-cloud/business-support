@@ -380,6 +380,57 @@ a {
   transform: translateY(0);
 }
 
+/* ========== こんな人におすすめ ========== */
+.recommend {
+  padding: 110px 0 90px;
+  background: #fff;
+}
+
+.recommend__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recommend__card {
+  background: #fff;
+  border: 2px solid #eef2f7;
+  border-radius: 14px;
+  padding: 32px 20px 28px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.recommend__card:hover {
+  transform: translateY(-4px);
+  border-color: transparent;
+  box-shadow: 0 12px 28px rgba(26, 46, 74, 0.1);
+}
+
+.recommend__check {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a2e4a, #3a6ea5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 16px rgba(26, 46, 74, 0.2);
+}
+
+.recommend__card p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a2e4a;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
 /* ========== サービス内容（お悩み） ========== */
 .services {
   padding: 110px 0;
@@ -658,21 +709,161 @@ a {
 /* ========== 料金 ========== */
 .pricing {
   padding: 100px 0;
+  background: #f7f9fc;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.pricing__card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 44px 32px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(26, 46, 74, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.pricing__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(26, 46, 74, 0.12);
+}
+
+.pricing__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1a2e4a, #3a6ea5);
+}
+
+.pricing__card--free::before {
+  background: linear-gradient(90deg, #06C755, #05a848);
+}
+
+.pricing__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eef2f7, #dde5ef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #1a2e4a;
+  font-size: 1.8rem;
+}
+
+.pricing__card--free .pricing__icon {
+  background: linear-gradient(135deg, #e6f9ef, #c7f0d8);
+  color: #06C755;
+}
+
+.pricing__label {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.pricing__price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.pricing__free {
+  color: #06C755;
+  font-size: 2.4rem;
+}
+
+.pricing__yen {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-left: 2px;
+}
+
+.pricing__unit {
+  display: block;
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: 400;
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+}
+
+.pricing__desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.9;
+}
+
+.pricing__note-box {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  border-left: 4px solid #1a2e4a;
+  border-radius: 10px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(26, 46, 74, 0.06);
+}
+
+.pricing__note-box i {
+  color: #1a2e4a;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.pricing__note-box p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ========== 対応エリア ========== */
+.area {
+  padding: 100px 0;
   background: #fff;
 }
 
-.pricing__box {
-  text-align: center;
-  background: linear-gradient(135deg, #f7f9fc, #eef2f7);
-  padding: 56px 40px;
-  border-radius: 16px;
-  position: relative;
-  overflow: hidden;
-  max-width: 720px;
-  margin: 0 auto;
+.area__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 880px;
+  margin: 0 auto 32px;
 }
 
-.pricing__box::before {
+.area__card {
+  background: linear-gradient(135deg, #f7f9fc, #eef2f7);
+  border-radius: 16px;
+  padding: 44px 36px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area__card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -682,18 +873,78 @@ a {
   background: linear-gradient(180deg, #1a2e4a, #3a6ea5);
 }
 
-.pricing__text {
-  font-size: 1.5rem;
-  color: #1a2e4a;
-  font-weight: 700;
-  margin-bottom: 16px;
-  letter-spacing: 0.04em;
+.area__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(26, 46, 74, 0.12);
 }
 
-.pricing__note {
+.area__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #1a2e4a;
+  font-size: 1.8rem;
+  box-shadow: 0 6px 16px rgba(26, 46, 74, 0.1);
+}
+
+.area__label {
   font-size: 0.95rem;
   color: #777;
-  line-height: 2;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.area__value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.area__value-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.area__desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.9;
+}
+
+.area__note {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #f7f9fc;
+  border-radius: 10px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.area__note i {
+  color: #06C755;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.area__note p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
 }
 
 /* ========== お問い合わせ ========== */
@@ -908,6 +1159,23 @@ a {
     margin: 0 auto;
   }
 
+  .recommend__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .pricing__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 440px;
+  }
+
+  .area__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 440px;
+  }
+
   .contact__grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1014,12 +1282,51 @@ a {
     padding: 72px 0;
   }
 
-  .pricing__box {
-    padding: 40px 24px;
+  .pricing__card {
+    padding: 36px 24px 32px;
   }
 
-  .pricing__text {
+  .pricing__price {
+    font-size: 2rem;
+  }
+
+  .pricing__note-box {
+    padding: 18px 20px;
+    gap: 12px;
+  }
+
+  .area {
+    padding: 72px 0;
+  }
+
+  .area__card {
+    padding: 36px 24px 32px;
+  }
+
+  .area__value {
     font-size: 1.25rem;
+  }
+
+  .area__note {
+    padding: 18px 20px;
+    gap: 12px;
+  }
+
+  .recommend {
+    padding: 72px 0 60px;
+  }
+
+  .recommend__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .recommend__card {
+    padding: 26px 16px 22px;
+  }
+
+  .recommend__card p {
+    font-size: 0.88rem;
   }
 
   .contact__inner {

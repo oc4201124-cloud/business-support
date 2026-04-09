@@ -18,9 +18,12 @@
     <div class="nav__inner">
       <span class="nav__logo">IT &amp; Life Support</span>
       <ul class="nav__menu">
+        <li><a href="#recommend">おすすめ</a></li>
         <li><a href="#services">お悩み</a></li>
         <li><a href="#works">実績</a></li>
         <li><a href="#voice">お客様の声</a></li>
+        <li><a href="#pricing">料金</a></li>
+        <li><a href="#area">対応エリア</a></li>
         <li><a href="#contact">お問い合わせ</a></li>
       </ul>
       <a href="#contact" class="nav__line"><i class="fa-brands fa-line"></i><span>LINE相談</span></a>
@@ -54,6 +57,38 @@
       <div class="hero__scroll-line"></div>
     </div>
   </header>
+
+  <!-- ========== こんな人におすすめ ========== -->
+  <section class="recommend" id="recommend">
+    <div class="container">
+      <p class="section-sub">Recommend</p>
+      <h2 class="section-title">こんな人におすすめ</h2>
+      <p class="section-lead">一つでも当てはまる方は、お気軽にご相談ください。</p>
+
+      <div class="recommend__grid">
+        <div class="recommend__card reveal">
+          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
+          <p>スマホが苦手な方</p>
+        </div>
+        <div class="recommend__card reveal">
+          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
+          <p>通信費を見直したい方</p>
+        </div>
+        <div class="recommend__card reveal">
+          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
+          <p>パソコンの使い方が<br>わからない方</p>
+        </div>
+        <div class="recommend__card reveal">
+          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
+          <p>便利なツールを<br>使いたい方</p>
+        </div>
+        <div class="recommend__card reveal">
+          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
+          <p>何を相談していいか<br>わからない方</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== サービス内容（こんなお悩みありませんか？） ========== -->
   <section class="services" id="services">
@@ -284,9 +319,61 @@
     <div class="container">
       <p class="section-sub">Price</p>
       <h2 class="section-title">料金</h2>
-      <div class="pricing__box reveal">
-        <p class="pricing__text">まずはお気軽にご相談ください</p>
-        <p class="pricing__note">ご相談・お見積もりは無料です。<br>内容やご予算に合わせてご提案いたします。</p>
+      <p class="section-lead">わかりやすい料金体系でご提供しています。<br>内容や作業量によって柔軟にご相談対応いたします。</p>
+
+      <div class="pricing__grid">
+        <div class="pricing__card pricing__card--free reveal">
+          <div class="pricing__icon"><i class="fa-solid fa-comments"></i></div>
+          <p class="pricing__label">初回相談</p>
+          <p class="pricing__price"><span class="pricing__free">無料</span></p>
+          <p class="pricing__desc">お気軽にご相談ください。<br>内容をお伺いしてご提案します。</p>
+        </div>
+        <div class="pricing__card reveal">
+          <div class="pricing__icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <p class="pricing__label">オンラインサポート</p>
+          <p class="pricing__price">3,000<span class="pricing__yen">円〜</span><span class="pricing__unit">／1時間</span></p>
+          <p class="pricing__desc">画面共有で遠隔サポート。<br>離れていても安心してご利用いただけます。</p>
+        </div>
+        <div class="pricing__card reveal">
+          <div class="pricing__icon"><i class="fa-solid fa-person-walking"></i></div>
+          <p class="pricing__label">出張サポート</p>
+          <p class="pricing__price">5,000<span class="pricing__yen">円〜</span><span class="pricing__unit">／1時間</span></p>
+          <p class="pricing__desc">ご自宅やオフィスへ訪問。<br>直接お会いして丁寧に対応します。</p>
+        </div>
+      </div>
+
+      <div class="pricing__note-box reveal">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>内容・作業量によって柔軟にご相談対応します。まずはお気軽にお問い合わせください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 対応エリア ========== -->
+  <section class="area" id="area">
+    <div class="container">
+      <p class="section-sub">Area</p>
+      <h2 class="section-title">対応エリア</h2>
+      <p class="section-lead">オンラインなら全国どこからでもサポート可能です。</p>
+
+      <div class="area__grid">
+        <div class="area__card reveal">
+          <div class="area__icon"><i class="fa-solid fa-globe"></i></div>
+          <p class="area__label">オンラインサポート</p>
+          <p class="area__value">全国対応</p>
+          <p class="area__desc">画面共有で遠隔サポート。<br>インターネット環境があればどこからでも。</p>
+        </div>
+        <div class="area__card reveal">
+          <div class="area__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <p class="area__label">出張サポート</p>
+          <p class="area__value">君津・木更津周辺<span class="area__value-sub">（千葉県内）</span></p>
+          <p class="area__desc">ご自宅やオフィスへ直接お伺いします。<br>対面で丁寧に対応いたします。</p>
+        </div>
+      </div>
+
+      <div class="area__note reveal">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>出張エリア外の方も、オンラインでご対応できます。まずはお気軽にご相談ください。</p>
       </div>
     </div>
   </section>
@@ -297,7 +384,7 @@
       <div class="container">
         <p class="section-sub section-sub--white">Contact</p>
         <h2 class="section-title section-title--white">お問い合わせ</h2>
-        <p class="contact__lead">どんな小さなことでも、お気軽にご連絡ください</p>
+        <p class="contact__lead">まずは無料相談OK！お気軽にどうぞ<br>どんな小さなことでも、まずはご連絡ください</p>
 
         <div class="contact__grid">
           <!-- メール -->
