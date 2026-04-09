@@ -98,14 +98,15 @@ mark {
 }
 
 .btn--outline {
-  background: transparent;
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.55);
+  background: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn--outline:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: #fff;
+  background: var(--primary-pale);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 /* ========== セクション見出し ========== */
@@ -226,44 +227,29 @@ mark {
 /* ========== ヒーローセクション ========== */
 .hero {
   position: relative;
-  min-height: 82vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  padding: 140px 0 120px;
+  color: var(--text);
+  padding: 140px 0 110px;
   overflow: hidden;
 }
 
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url("hero.jpg");
-  background-size: cover;
-  /* 左〜中央を表示、右下の看板はカット */
-  background-position: left center;
-  background-repeat: no-repeat;
+  background: linear-gradient(160deg, #ffffff 0%, #f5f8fd 50%, #eaf1fb 100%);
 }
 
 .hero__bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  /* テキスト視認性のためのダークオーバーレイ */
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.hero__bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* ブルーティント（ブランド感） */
-  background: linear-gradient(
-    135deg,
-    rgba(30, 64, 175, 0.25) 0%,
-    rgba(37, 99, 235, 0.15) 100%
-  );
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 45%);
 }
 
 .hero__shape {
@@ -277,7 +263,7 @@ mark {
   height: 420px;
   top: -140px;
   right: -80px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(37, 99, 235, 0.05);
 }
 
 .hero__shape--2 {
@@ -285,7 +271,7 @@ mark {
   height: 280px;
   bottom: -80px;
   left: -60px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(37, 99, 235, 0.04);
 }
 
 .hero__container {
@@ -304,18 +290,7 @@ mark {
 }
 
 .hero__area {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 9px 22px;
-  border-radius: 999px;
-  letter-spacing: 0.08em;
-  margin-bottom: 28px;
+  display: none;
 }
 
 .hero__area i {
@@ -329,7 +304,7 @@ mark {
   letter-spacing: 0.04em;
   margin-bottom: 28px;
   text-align: center;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  color: var(--text);
   /* 英数字や記号位置で不自然に折り返さない */
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -339,10 +314,9 @@ mark {
   font-size: 19px;
   font-weight: 400;
   line-height: 1.9;
-  opacity: 0.95;
+  color: var(--text-soft);
   margin: 0 auto 44px;
   text-align: center;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   word-break: keep-all;
   overflow-wrap: break-word;
 }
