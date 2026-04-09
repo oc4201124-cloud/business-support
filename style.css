@@ -372,11 +372,13 @@ mark {
   border-radius: 16px;
   padding: 44px 32px 32px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .trust__card:hover {
-  transform: translateY(-4px);
   border-color: var(--primary-light);
   box-shadow: 0 16px 38px rgba(37, 99, 235, 0.1);
 }
@@ -455,6 +457,83 @@ mark {
   border-top: 1px dashed var(--border);
   line-height: 1.7;
   margin-bottom: 0 !important;
+}
+
+/* アコーディオン詳細エリア */
+.trust__details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+  margin-top: 0;
+  width: 100%;
+}
+
+.trust__details > p {
+  overflow: hidden;
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.85;
+  text-align: left;
+  min-height: 0;
+  padding: 0 4px;
+}
+
+.trust__card.is-open .trust__details {
+  grid-template-rows: 1fr;
+  margin-top: 18px;
+}
+
+.trust__card.is-open .trust__details > p {
+  padding: 16px 18px;
+  background: var(--primary-pale);
+  border-radius: 10px;
+}
+
+.trust__card.is-open {
+  background: #fbfcff;
+  border-color: var(--primary-light);
+  box-shadow: 0 16px 38px rgba(37, 99, 235, 0.12);
+}
+
+/* 詳しく見る / 閉じるボタン */
+.trust__toggle {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 22px;
+  background: #fff;
+  border: 1.5px solid var(--primary);
+  border-radius: 999px;
+  color: var(--primary);
+  font-size: 0.86rem;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.trust__toggle:hover {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.trust__toggle i {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.trust__card.is-open .trust__toggle i {
+  transform: rotate(180deg);
+}
+
+.trust__card.is-open .trust__toggle {
+  background: var(--primary);
+  color: #fff;
 }
 
 /* ========== 運営者情報 ========== */
@@ -578,13 +657,21 @@ mark {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+  cursor: default;
+  user-select: text;
+  transition: none;
 }
 
-.achievement-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--primary-light);
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+/* 実績バッジは静的表示 — ホバー/フォーカス/アクティブ時の変化なし */
+.achievement-card:hover,
+.achievement-card:focus,
+.achievement-card:focus-visible,
+.achievement-card:active {
+  transform: none;
+  border-color: var(--border);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
+  background: #ffffff;
+  outline: none;
 }
 
 .achievement-card i {

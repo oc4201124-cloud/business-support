@@ -70,6 +70,13 @@
           <h3>押し売り・勧誘は<br>一切しません</h3>
           <p>無理な契約やサービスのお勧めはいたしません。お話を伺うだけでも大丈夫です。</p>
           <p class="trust__micro">※ご相談は無料です。無理な勧誘はいたしません</p>
+          <div class="trust__details" aria-hidden="true">
+            <p>はじめてのご相談でも、サービスの押し売りは一切しません。「話を聞いてもらっただけで安心した」というお声もいただいています。まずはお気軽にご相談ください。</p>
+          </div>
+          <button type="button" class="trust__toggle" aria-expanded="false">
+            <span class="trust__toggle-label">詳しく見る</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
         </div>
         <div class="trust__card reveal">
           <!-- いらすとや：書類を説明しているイラスト illust/trust-document.png -->
@@ -80,6 +87,13 @@
           <h3>事前お見積もり<br>無料</h3>
           <p>作業前に必ず内容と料金をご提示します。確認いただいてからの作業です。</p>
           <p class="trust__micro">※お見積もり内容に納得いただいてからの作業です</p>
+          <div class="trust__details" aria-hidden="true">
+            <p>作業前に必ず内容と料金をご説明します。ご納得いただいてから作業を開始しますので、安心してご相談いただけます。</p>
+          </div>
+          <button type="button" class="trust__toggle" aria-expanded="false">
+            <span class="trust__toggle-label">詳しく見る</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
         </div>
         <div class="trust__card reveal">
           <!-- いらすとや：お金の説明をしているイラスト illust/trust-money.png -->
@@ -90,6 +104,13 @@
           <h3>追加請求なし<br>明朗会計</h3>
           <p>お見積もり後の追加料金は発生しません。想定外は必ず事前にご相談します。</p>
           <p class="trust__micro">※想定外のことがあれば必ず事前にご相談します</p>
+          <div class="trust__details" aria-hidden="true">
+            <p>お見積もり後の追加料金は発生しません。万が一想定外のことがあれば、必ず事前にご相談してから進めます。</p>
+          </div>
+          <button type="button" class="trust__toggle" aria-expanded="false">
+            <span class="trust__toggle-label">詳しく見る</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -736,6 +757,19 @@
         toggleMore(!expanded);
       });
     }
+
+    // 安心のお約束カードのアコーディオン
+    document.querySelectorAll('.trust__toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.trust__card');
+        const details = card.querySelector('.trust__details');
+        const label = btn.querySelector('.trust__toggle-label');
+        const isOpen = card.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (details) details.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        if (label) label.textContent = isOpen ? '閉じる' : '詳しく見る';
+      });
+    });
   </script>
 
 </body>
