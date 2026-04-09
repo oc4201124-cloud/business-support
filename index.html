@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITサポート＆家計管理サポート｜千葉・君津・木更津の町のIT相談窓口</title>
-  <meta name="description" content="千葉県・君津・木更津エリアを中心に、スマホ・PC・通信費まわりのデジタルのお困りごとにお応えしている個人サポーターです。押し売りなし・事前お見積もり無料。">
+  <meta name="description" content="千葉県・君津・木更津エリアを中心に、スマホ・PC・通信費まわりのデジタルのお困りごとにお応えしています。押し売りなし・事前お見積もり無料。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,7 @@
   <!-- ========== ナビゲーション ========== -->
   <nav class="nav">
     <div class="nav__inner">
-      <span class="nav__logo">IT &amp; Life Support</span>
+      <span class="nav__logo">ITサポート＆家計管理</span>
       <ul class="nav__menu">
         <li><a href="#about">運営者</a></li>
         <li><a href="#services">対応内容</a></li>
@@ -31,20 +31,40 @@
   <!-- ========== ヒーローセクション ========== -->
   <header class="hero" id="top">
     <div class="hero__bg"></div>
-    <div class="hero__content">
-      <p class="hero__area"><i class="fa-solid fa-location-dot"></i> 千葉・君津・木更津エリア</p>
-      <h1 class="hero__title">ややこしい作業を、<br>かんたんにするお手伝い</h1>
-      <div class="hero__line"></div>
-      <p class="hero__desc">
-        スマホ・パソコン・通信費のことまで、<br>
-        地域の方のデジタルのお困りごとに、<br class="sp-only">
-        ひとつひとつお応えしています。
-      </p>
-      <ul class="hero__badges">
-        <li><i class="fa-solid fa-circle-check"></i> 押し売りしません</li>
-        <li><i class="fa-solid fa-circle-check"></i> 事前お見積もり無料</li>
-        <li><i class="fa-solid fa-circle-check"></i> 追加請求なし</li>
-      </ul>
+    <div class="hero__shape hero__shape--1"></div>
+    <div class="hero__shape hero__shape--2"></div>
+    <div class="container hero__container">
+      <div class="hero__content">
+        <p class="hero__area"><i class="fa-solid fa-location-dot"></i> 千葉・君津・木更津エリア</p>
+        <h1 class="hero__title">ややこしい作業を、<br>かんたんにするお手伝い</h1>
+        <p class="hero__subtitle">
+          スマホ・パソコン・通信費のことなら、<br>
+          君津・木更津の町のIT相談窓口へ。
+        </p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">
+            <i class="fa-regular fa-comments"></i> 無料で相談する
+          </a>
+          <a href="#works" class="btn btn--outline">
+            対応事例を見る <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- ヒーロービジュアル（いらすとや等のイラストに差し替え可能） -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__visual-circle">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
+        <div class="hero__visual-sub hero__visual-sub--1">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <div class="hero__visual-sub hero__visual-sub--2">
+          <i class="fa-regular fa-comments"></i>
+        </div>
+        <div class="hero__visual-sub hero__visual-sub--3">
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -52,29 +72,27 @@
   <section class="trust">
     <div class="container">
       <p class="section-sub">Our Promise</p>
-      <h2 class="section-title">安心してご相談いただくために</h2>
+      <h2 class="section-title">安心のお約束</h2>
       <p class="section-lead">「パソコンやスマホのお店は、なんとなく入りづらい」<br>そんな方にも気軽にご相談いただけるよう、次のことをお約束しています。</p>
 
       <div class="trust__grid">
         <div class="trust__card reveal">
           <div class="trust__icon"><i class="fa-regular fa-face-smile"></i></div>
-          <h3>押し売りはしません</h3>
-          <p>無理な契約やサービスのお勧めはいたしません。まずはお話を伺うだけでも大丈夫です。</p>
+          <h3>押し売り・勧誘は<br>一切しません</h3>
+          <p>無理な契約やサービスのお勧めはいたしません。お話を伺うだけでも大丈夫です。</p>
+          <p class="trust__micro">※ご相談は無料です。無理な勧誘はいたしません</p>
         </div>
         <div class="trust__card reveal">
           <div class="trust__icon"><i class="fa-regular fa-file-lines"></i></div>
-          <h3>事前お見積もり無料</h3>
-          <p>作業前に必ず内容と料金をご提示します。内容を確認いただいてからの作業です。</p>
+          <h3>事前お見積もり<br>無料</h3>
+          <p>作業前に必ず内容と料金をご提示します。確認いただいてからの作業です。</p>
+          <p class="trust__micro">※お見積もり内容に納得いただいてからの作業です</p>
         </div>
         <div class="trust__card reveal">
           <div class="trust__icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>追加請求はありません</h3>
-          <p>お見積もり後の追加料金は発生しません。想定外のことがあれば、その都度ご相談します。</p>
-        </div>
-        <div class="trust__card reveal">
-          <div class="trust__icon"><i class="fa-solid fa-map-pin"></i></div>
-          <h3>地域密着でお応えします</h3>
-          <p>千葉・君津・木更津エリアを中心に、地元の方のご相談にていねいに向き合っています。</p>
+          <h3>追加請求なし<br>明朗会計</h3>
+          <p>お見積もり後の追加料金は発生しません。想定外は必ず事前にご相談します。</p>
+          <p class="trust__micro">※想定外のことがあれば必ず事前にご相談します</p>
         </div>
       </div>
     </div>
@@ -87,69 +105,78 @@
       <h2 class="section-title">運営者について</h2>
 
       <div class="about__box">
-        <div class="about__icon">
-          <i class="fa-solid fa-user-tie"></i>
+        <!-- 左：プロフィールイラスト（いらすとやのPC作業中イラストに差し替え可能） -->
+        <div class="about__illust">
+          <div class="about__illust-inner">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div class="about__illust-deco about__illust-deco--1"><i class="fa-solid fa-laptop"></i></div>
+          <div class="about__illust-deco about__illust-deco--2"><i class="fa-solid fa-mobile-screen-button"></i></div>
         </div>
+
         <div class="about__body">
-          <p class="about__lead">千葉県在住の個人サポーターです</p>
+          <p class="about__role">町のIT相談窓口 ／ デジタルサポーター</p>
+          <h3 class="about__heading">何を聞けばいいか分からない、を解決します</h3>
           <p class="about__text">
-            20年以上のIT活用経験をもとに、スマホ・PC・通信費まわりを中心に、地域の方のデジタルのお困りごとにお応えしています。<br>
-            「お店では聞きにくい細かいこと」「どこに相談すればいいか分からないこと」こそ、遠慮なくお声がけください。
+            千葉・君津・木更津エリアを中心に、スマホ・パソコン・通信費の「何を聞けばいいか分からない」をサポートしています。
           </p>
           <p class="about__text">
-            ご家族や親御さんのスマホのことでお悩みの方、個人事業主の方の業務効率化・通信費の見直しなど、<strong>一人ひとりの状況に合わせてていねいにお手伝い</strong>いたします。<br>
-            商品を売ることが目的ではなく、<strong>「困りごとが片付くこと」</strong>をいちばん大切にしています。
+            現場で20年以上デジタル機器を活用。家族や知人へのスマホ・PC・通信費サポートを継続して行ってきました。「お店では聞きにくい細かいこと」や「どこに相談すればいいか分からないこと」にもお応えしています。
           </p>
-          <dl class="about__meta">
-            <div>
-              <dt>所在地</dt>
-              <dd>千葉県</dd>
-            </div>
-            <div>
-              <dt>対応エリア</dt>
-              <dd>君津・木更津周辺（出張）／全国（オンライン）</dd>
-            </div>
-            <div>
-              <dt>対応分野</dt>
-              <dd>スマホ・PC・通信費・書類作成・データ管理・SNS運用ほか</dd>
-            </div>
-            <div>
-              <dt>営業時間</dt>
-              <dd>平日・土日 9:00〜20:00（要事前連絡）</dd>
-            </div>
-          </dl>
+          <p class="about__text">
+            商品を売ることが目的ではなく、<mark>困りごとが片付くこと</mark>をいちばん大切にしています。
+          </p>
+        </div>
+      </div>
+
+      <!-- 実績バッジ -->
+      <div class="about__badges">
+        <div class="about__badge reveal">
+          <div class="about__badge-num">30<span>件以上</span></div>
+          <p class="about__badge-label">対応実績</p>
+          <p class="about__badge-desc">スマホ初期設定・機種変更・通信費見直しなど</p>
+        </div>
+        <div class="about__badge reveal">
+          <div class="about__badge-num">4,000<span>人超</span></div>
+          <p class="about__badge-label">YouTube登録者</p>
+          <p class="about__badge-desc">IT・生活ノウハウのチャンネルを運営中</p>
+        </div>
+        <div class="about__badge reveal">
+          <div class="about__badge-num">26<span>本以上</span></div>
+          <p class="about__badge-label">ブログ記事</p>
+          <p class="about__badge-desc">IT・節約・生活のノウハウ記事を執筆</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== こんな方へ ========== -->
+  <!-- ========== こんな方に向いています ========== -->
   <section class="recommend" id="recommend">
     <div class="container">
       <p class="section-sub">For You</p>
-      <h2 class="section-title">こんな方のご相談をお受けしています</h2>
+      <h2 class="section-title">こんな方に向いています</h2>
       <p class="section-lead">一つでも当てはまる方は、お気軽にお問い合わせください。</p>
 
       <div class="recommend__grid">
         <div class="recommend__card reveal">
-          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
-          <p>スマホの操作に<br>不安がある方</p>
+          <div class="recommend__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <p class="recommend__text">スマホの操作に<br>不安がある方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
-          <p>通信費を<br>見直したい方</p>
+          <div class="recommend__icon"><i class="fa-solid fa-yen-sign"></i></div>
+          <p class="recommend__text">通信費を<br>見直したい方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
-          <p>パソコンの使い方を<br>相談したい方</p>
+          <div class="recommend__icon"><i class="fa-solid fa-laptop"></i></div>
+          <p class="recommend__text">パソコンの使い方を<br>相談したい方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
-          <p>便利なツールを<br>取り入れたい方</p>
+          <div class="recommend__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <p class="recommend__text">便利なツールを<br>取り入れたい方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__check"><i class="fa-solid fa-check"></i></div>
-          <p>何から相談していいか<br>分からない方</p>
+          <div class="recommend__icon"><i class="fa-solid fa-circle-question"></i></div>
+          <p class="recommend__text">何から相談すれば<br>いいか分からない方</p>
         </div>
       </div>
     </div>
@@ -160,10 +187,10 @@
     <div class="container">
       <p class="section-sub">Service</p>
       <h2 class="section-title">対応内容</h2>
-      <p class="section-lead">日常のお困りごとを幅広くお受けしています。<br>各項目の詳しい対応事例は下のリンクからご覧いただけます。</p>
+      <p class="section-lead">日常のお困りごとを幅広くお受けしています。<br>気になる項目をタップすると対応事例にジャンプします。</p>
 
       <div class="services__grid">
-        <a href="#works-phone" class="services__card reveal">
+        <a href="#works-phone" class="services__card reveal" data-tab="phone">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-mobile-screen-button"></i>
           </div>
@@ -171,7 +198,7 @@
           <p>初期設定・アプリの使い方・機種変更など、スマホ全般のご相談にお応えします。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-money" class="services__card reveal">
+        <a href="#works-money" class="services__card reveal" data-tab="money">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-yen-sign"></i>
           </div>
@@ -179,7 +206,7 @@
           <p>毎月の通信費の見直しや、ご家庭に合ったプランのご提案をしています。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-efficiency" class="services__card reveal">
+        <a href="#works-other" class="services__card reveal" data-tab="other">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-file-lines"></i>
           </div>
@@ -187,7 +214,7 @@
           <p>ビジネス文書・各種書類・SNS投稿の文章まで、作成のお手伝いをいたします。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-pc" class="services__card reveal">
+        <a href="#works-pc" class="services__card reveal" data-tab="pc">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-folder-open"></i>
           </div>
@@ -195,7 +222,7 @@
           <p>写真やファイルの整理、バックアップなど、大切なデータの管理をサポートします。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-efficiency" class="services__card reveal">
+        <a href="#works-other" class="services__card reveal" data-tab="other">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-gears"></i>
           </div>
@@ -203,7 +230,7 @@
           <p>繰り返し作業の整理や、業務に役立つツールの導入をご案内します。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-sns" class="services__card reveal">
+        <a href="#works-sns" class="services__card reveal" data-tab="sns">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -215,145 +242,152 @@
     </div>
   </section>
 
-  <!-- ========== 斜め区切り ========== -->
-  <div class="divider"></div>
-
-  <!-- ========== 対応事例 ========== -->
+  <!-- ========== 対応事例（タブ化） ========== -->
   <section class="works" id="works">
     <div class="container">
       <p class="section-sub">Works</p>
       <h2 class="section-title">これまでの対応事例</h2>
-      <p class="section-lead">これまでにお受けしてきたご相談の一例をご紹介します。</p>
+      <p class="section-lead">これまでにお受けしてきたご相談の事例を、カテゴリ別にご紹介します。</p>
 
-      <div class="works__grid">
+      <div class="works__tabs" role="tablist">
+        <button class="works__tab is-active" data-tab="phone" role="tab" aria-selected="true">
+          <i class="fa-solid fa-mobile-screen"></i><span>スマホ</span>
+        </button>
+        <button class="works__tab" data-tab="money" role="tab" aria-selected="false">
+          <i class="fa-solid fa-sack-dollar"></i><span>通信費</span>
+        </button>
+        <button class="works__tab" data-tab="pc" role="tab" aria-selected="false">
+          <i class="fa-solid fa-laptop"></i><span>PC</span>
+        </button>
+        <button class="works__tab" data-tab="sns" role="tab" aria-selected="false">
+          <i class="fa-solid fa-bullhorn"></i><span>SNS</span>
+        </button>
+        <button class="works__tab" data-tab="other" role="tab" aria-selected="false">
+          <i class="fa-solid fa-circle-question"></i><span>その他</span>
+        </button>
+      </div>
 
-        <!-- 📱 スマホ・通信 -->
-        <div class="works__card reveal" id="works-phone">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-mobile-screen"></i></div>
-            <h3>スマホ・通信サポート</h3>
-          </div>
+      <div class="works__panels">
+
+        <!-- スマホ -->
+        <div class="works__panel is-active" data-panel="phone" id="works-phone">
           <ul class="works__list">
-            <li><strong>60代男性のスマホ初期設定</strong><span>NetflixがTVで見られないお悩みの解決と、不要オプションの整理を行いました。</span></li>
-            <li><strong>60代ご夫婦のガラケー→iPhone移行</strong><span>操作に不安のあったお二人が、安心して使えるようになるまで対応しました。</span></li>
-            <li><strong>30代女性のAndroid→iPhone機種変更</strong><span>データ移行までスムーズに完了しました。</span></li>
-            <li><strong>お子様の初めてのスマホ導入</strong><span>機種選びから初期設定・フィルタリングまで対応しました。</span></li>
-            <li><strong>iPhoneのアップデートサポート</strong></li>
-            <li><strong>LINE・YouTubeなどの操作サポート</strong><span>使い方のご案内を行いました。</span></li>
+            <li><i class="fa-solid fa-mobile-screen"></i><div><strong>60代男性のスマホ初期設定</strong><span>NetflixがTVで見られないお悩みの解決と、不要オプションの整理を行いました。</span></div></li>
+            <li><i class="fa-solid fa-mobile-screen"></i><div><strong>60代ご夫婦のガラケー→iPhone移行</strong><span>操作に不安のあったお二人が、安心して使えるようになるまで対応しました。</span></div></li>
+            <li><i class="fa-solid fa-mobile-screen"></i><div><strong>30代女性のAndroid→iPhone機種変更</strong><span>データ移行までスムーズに完了しました。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-mobile-screen"></i><div><strong>お子様の初めてのスマホ導入</strong><span>機種選びから初期設定・フィルタリングまで対応しました。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-mobile-screen"></i><div><strong>iPhoneのアップデートサポート</strong><span>アップデート時の設定や動作確認を行いました。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-mobile-screen"></i><div><strong>LINE・YouTubeなどの操作サポート</strong><span>使い方のご案内を行いました。</span></div></li>
           </ul>
         </div>
 
-        <!-- 💰 家計管理・通信費 -->
-        <div class="works__card reveal" id="works-money">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-sack-dollar"></i></div>
-            <h3>家計管理・通信費見直し</h3>
-          </div>
+        <!-- 通信費 -->
+        <div class="works__panel" data-panel="money" id="works-money">
           <ul class="works__list">
-            <li><strong>大手3キャリア→格安SIMへの乗り換え</strong><span>毎月の通信費の削減をお手伝いしました。</span></li>
-            <li><strong>光回線（JCOM・フレッツ光など）の見直し</strong><span>条件の合う回線への切り替えをサポート。</span></li>
-            <li><strong>楽天モバイルで自宅ネット環境を構築</strong><span>工事不要で通信費を抑えた環境を整えました。</span></li>
-            <li><strong>親世代の通信契約見直し</strong><span>不要な契約を整理し、状況に合ったプランをご提案しました。</span></li>
-            <li><strong>固定費の見直し・支出整理</strong><span>家計の見直しについてアドバイスを行いました。</span></li>
+            <li><i class="fa-solid fa-sack-dollar"></i><div><strong>大手3キャリア→格安SIMへの乗り換え</strong><span>毎月の通信費の削減をお手伝いしました。</span></div></li>
+            <li><i class="fa-solid fa-sack-dollar"></i><div><strong>光回線（JCOM・フレッツ光など）の見直し</strong><span>条件の合う回線への切り替えをサポート。</span></div></li>
+            <li><i class="fa-solid fa-sack-dollar"></i><div><strong>楽天モバイルで自宅ネット環境を構築</strong><span>工事不要で通信費を抑えた環境を整えました。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-sack-dollar"></i><div><strong>親世代の通信契約見直し</strong><span>不要な契約を整理し、状況に合ったプランをご提案しました。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-sack-dollar"></i><div><strong>固定費の見直し・支出整理</strong><span>家計の見直しについてアドバイスを行いました。</span></div></li>
           </ul>
         </div>
 
-        <!-- 💻 PC・デバイス -->
-        <div class="works__card reveal" id="works-pc">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-laptop"></i></div>
-            <h3>PC・デバイスサポート</h3>
-          </div>
+        <!-- PC -->
+        <div class="works__panel" data-panel="pc" id="works-pc">
           <ul class="works__list">
-            <li><strong>Windows 10 → 11 へのアップグレード</strong><span>設定から動作確認まで対応しました。</span></li>
-            <li><strong>新しいPCへのデータ移行・環境構築</strong><span>以前の使用環境を引き継いでの移行をサポート。</span></li>
-            <li><strong>ゲーミングPC購入サポート</strong><span>用途・予算に合わせた機種選びをご提案しました。</span></li>
-            <li><strong>Macの初期設定・基本操作サポート</strong><span>初めてお使いになる方にも対応しています。</span></li>
-            <li><strong>Windows・Mac両対応</strong><span>どちらのOSでもサポート可能です。</span></li>
-            <li><strong>ファイル整理・データ管理</strong><span>写真や書類の整理、バックアップの見直しを行いました。</span></li>
+            <li><i class="fa-solid fa-laptop"></i><div><strong>Windows 10 → 11 へのアップグレード</strong><span>設定から動作確認まで対応しました。</span></div></li>
+            <li><i class="fa-solid fa-laptop"></i><div><strong>新しいPCへのデータ移行・環境構築</strong><span>以前の使用環境を引き継いでの移行をサポート。</span></div></li>
+            <li><i class="fa-solid fa-laptop"></i><div><strong>ゲーミングPC購入サポート</strong><span>用途・予算に合わせた機種選びをご提案しました。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-laptop"></i><div><strong>Macの初期設定・基本操作サポート</strong><span>初めてお使いになる方にも対応しています。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-laptop"></i><div><strong>Windows・Mac両対応</strong><span>どちらのOSでもサポート可能です。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-laptop"></i><div><strong>ファイル整理・データ管理</strong><span>写真や書類の整理、バックアップの見直しを行いました。</span></div></li>
           </ul>
         </div>
 
-        <!-- ⚙️ 効率化 -->
-        <div class="works__card reveal" id="works-efficiency">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-gears"></i></div>
-            <h3>作業効率化・デジタル活用</h3>
-          </div>
+        <!-- SNS -->
+        <div class="works__panel" data-panel="sns" id="works-sns">
           <ul class="works__list">
-            <li><strong>面倒な作業の整理・効率化</strong><span>繰り返し作業の負担軽減をサポートしています。</span></li>
-            <li><strong>最新ツールの導入サポート</strong><span>初期設定から使い始めまでご案内します。</span></li>
-            <li><strong>Excel・スプレッドシートの作成・整理</strong><span>表の作成からデータ整理・関数の活用まで対応。</span></li>
-            <li><strong>文章作成・情報整理のサポート</strong><span>伝わりやすい形への整理を行っています。</span></li>
+            <li><i class="fa-solid fa-bullhorn"></i><div><strong>X（旧Twitter）の投稿サポート</strong><span>構成・文章・画像制作まで対応しています。</span></div></li>
+            <li><i class="fa-solid fa-bullhorn"></i><div><strong>YouTubeチャンネル運営</strong><span>登録者4,000人超のチャンネルを運営中です。</span></div></li>
+            <li><i class="fa-solid fa-pen-to-square"></i><div><strong>ノウハウ系ブログ記事を26記事以上公開</strong><span>IT・節約・生活ノウハウの執筆実績があります。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-bullhorn"></i><div><strong>SNS運用サポート</strong><span>発信内容の整理や投稿づくりをお手伝いします。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-bullhorn"></i><div><strong>アイコン作成・画像制作</strong><span>発信に合わせた見た目づくりを支援しています。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-pen-to-square"></i><div><strong>ブログ記事の構成・文章作成サポート</strong><span>読みやすく伝わる形への整理を行っています。</span></div></li>
           </ul>
         </div>
 
-        <!-- 📣 SNS -->
-        <div class="works__card reveal" id="works-sns">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-bullhorn"></i></div>
-            <h3>SNS・コンテンツ制作</h3>
-          </div>
+        <!-- その他 -->
+        <div class="works__panel" data-panel="other" id="works-other">
           <ul class="works__list">
-            <li><strong>X（旧Twitter）の投稿サポート</strong><span>構成・文章・画像制作まで対応しています。</span></li>
-            <li><strong>SNS運用サポート</strong><span>発信内容の整理や投稿づくりをお手伝いします。</span></li>
-            <li><strong>アイコン作成・画像制作</strong><span>発信に合わせた見た目づくりを支援しています。</span></li>
-            <li><strong>YouTubeチャンネル運営</strong><span>登録者4,000人超のチャンネルを運営中です。</span></li>
+            <li><i class="fa-solid fa-gears"></i><div><strong>面倒な作業の整理・効率化</strong><span>繰り返し作業の負担軽減をサポートしています。</span></div></li>
+            <li><i class="fa-solid fa-circle-question"></i><div><strong>スマホ・PCのちょっとした困りごと相談</strong><span>設定・操作・トラブルなど幅広くお受けしています。</span></div></li>
+            <li><i class="fa-solid fa-handshake"></i><div><strong>対面・オフ会でのデジタル活用サポート</strong><span>初心者の方にも分かりやすい説明を心がけています。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-gears"></i><div><strong>最新ツールの導入サポート</strong><span>初期設定から使い始めまでご案内します。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-gears"></i><div><strong>Excel・スプレッドシートの作成・整理</strong><span>表の作成からデータ整理・関数の活用まで対応。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-gears"></i><div><strong>文章作成・情報整理のサポート</strong><span>伝わりやすい形への整理を行っています。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-circle-question"></i><div><strong>初心者向けITサポート</strong><span>「何を聞けばいいか分からない」状態からのご相談にも対応します。</span></div></li>
+            <li class="is-hidden"><i class="fa-solid fa-circle-question"></i><div><strong>スマホ・PCのトラブル解決</strong><span>不具合や接続トラブルの原因特定・解決を支援します。</span></div></li>
           </ul>
         </div>
 
-        <!-- 📝 ブログ -->
-        <div class="works__card reveal" id="works-blog">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-pen-to-square"></i></div>
-            <h3>ブログ・コンテンツ制作</h3>
-          </div>
-          <ul class="works__list">
-            <li><strong>ノウハウ系ブログ記事を26記事以上公開</strong><span>IT・節約・生活ノウハウなどの執筆実績があります（最高閲覧数500件超）。</span></li>
-            <li><strong>ブログ記事の構成・文章作成サポート</strong><span>読みやすく伝わる形への整理を行っています。</span></li>
-          </ul>
-        </div>
+      </div>
 
-        <!-- 🤝 対面 -->
-        <div class="works__card reveal" id="works-meeting">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-handshake"></i></div>
-            <h3>対面・相談サポート</h3>
-          </div>
-          <ul class="works__list">
-            <li><strong>オフ会でのデジタル活用サポート</strong><span>初心者の方にも分かりやすい説明を心がけています。</span></li>
-            <li><strong>PC・スマホの困りごと相談</strong><span>対面でのご相談にも対応しています。</span></li>
-          </ul>
-        </div>
-
-        <!-- 🧩 ITなんでも相談 -->
-        <div class="works__card reveal" id="works-other">
-          <div class="works__head">
-            <div class="works__icon"><i class="fa-solid fa-circle-question"></i></div>
-            <h3>ITなんでも相談・トラブル対応</h3>
-          </div>
-          <ul class="works__list">
-            <li><strong>スマホ・PCのちょっとした困りごと</strong><span>設定・操作・トラブルなど幅広くお受けしています。</span></li>
-            <li><strong>初心者向けITサポート</strong><span>「何を聞けばいいか分からない」状態からのご相談にも対応します。</span></li>
-            <li><strong>スマホ・PCのトラブル解決</strong><span>不具合や接続トラブルの原因特定・解決を支援します。</span></li>
-          </ul>
-        </div>
-
+      <div class="works__more-wrap">
+        <button type="button" class="works__more-btn" aria-expanded="false">
+          <span class="works__more-text">もっと見る</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- ========== 料金 ========== -->
+  <!-- ========== 料金（3カラム） ========== -->
   <section class="pricing" id="pricing">
     <div class="container">
       <p class="section-sub">Price</p>
       <h2 class="section-title">料金</h2>
+      <p class="section-lead">内容や作業量に応じて、事前にお見積もりをご提示します。</p>
 
-      <div class="pricing__simple reveal">
-        <div class="pricing__simple-icon"><i class="fa-solid fa-comments"></i></div>
-        <p class="pricing__simple-text">お気軽にご相談ください</p>
-        <p class="pricing__simple-note">作業内容や所要時間に応じて、<br class="sp-only">ご相談のうえ決定いたします。</p>
+      <div class="pricing__grid">
+        <div class="pricing__card pricing__card--free reveal">
+          <p class="pricing__plan">初回相談</p>
+          <p class="pricing__amount"><span class="pricing__big">無料</span></p>
+          <p class="pricing__desc">まずはお話だけでも承ります</p>
+          <ul class="pricing__features">
+            <li><i class="fa-solid fa-check"></i>内容のヒアリング</li>
+            <li><i class="fa-solid fa-check"></i>作業内容のご提案</li>
+            <li><i class="fa-solid fa-check"></i>お見積もりのご提示</li>
+          </ul>
+          <span class="pricing__badge"><mark>初回相談無料</mark></span>
+        </div>
+
+        <div class="pricing__card reveal">
+          <p class="pricing__plan">オンライン</p>
+          <p class="pricing__amount"><span class="pricing__big">3,000</span><span class="pricing__unit">円〜／1時間</span></p>
+          <p class="pricing__desc">画面共有による遠隔サポート</p>
+          <ul class="pricing__features">
+            <li><i class="fa-solid fa-check"></i>全国対応</li>
+            <li><i class="fa-solid fa-check"></i>画面共有でご説明</li>
+            <li><i class="fa-solid fa-check"></i>土日夜間もご相談可</li>
+          </ul>
+        </div>
+
+        <div class="pricing__card reveal">
+          <p class="pricing__plan">出張</p>
+          <p class="pricing__amount"><span class="pricing__big">5,000</span><span class="pricing__unit">円〜／1時間</span></p>
+          <p class="pricing__desc">ご自宅・オフィスへお伺い</p>
+          <ul class="pricing__features">
+            <li><i class="fa-solid fa-check"></i><mark>君津・木更津対応</mark></li>
+            <li><i class="fa-solid fa-check"></i>対面でご説明</li>
+            <li><i class="fa-solid fa-check"></i>実機操作のサポート</li>
+          </ul>
+        </div>
       </div>
+
+      <p class="pricing__note">
+        <i class="fa-solid fa-circle-info"></i>
+        記載料金は目安です。作業内容や所要時間に応じて事前にお見積もりをご提示し、<mark>ご納得いただいてから作業を開始します</mark>ので、追加請求はございません。
+      </p>
     </div>
   </section>
 
@@ -369,25 +403,25 @@
           <div class="flow__num">01</div>
           <div class="flow__icon"><i class="fa-solid fa-envelope-open-text"></i></div>
           <h3>お問い合わせ</h3>
-          <p>LINE・メール・フォームからお気軽にご連絡ください。<br><strong>写真や画面を送っていただくだけでもOK</strong>です。</p>
+          <p>メール・フォーム・LINEからお気軽にご連絡ください。写真や画面を送っていただくだけでもOKです。</p>
         </div>
         <div class="flow__step reveal">
           <div class="flow__num">02</div>
           <div class="flow__icon"><i class="fa-solid fa-headset"></i></div>
           <h3>ヒアリング</h3>
-          <p>お困りの内容を詳しくお伺いします。<br>初回のご相談は無料です。無理な営業はいたしません。</p>
+          <p>お困りの内容を詳しくお伺いします。初回のご相談は無料です。</p>
         </div>
         <div class="flow__step reveal">
           <div class="flow__num">03</div>
           <div class="flow__icon"><i class="fa-solid fa-clipboard-list"></i></div>
           <h3>お見積もり</h3>
-          <p>作業内容と料金をご提示します。<br>ご不明な点はお気軽にご質問ください。</p>
+          <p>作業内容と料金をご提示します。ご不明な点はお気軽にご質問ください。</p>
         </div>
         <div class="flow__step reveal">
           <div class="flow__num">04</div>
           <div class="flow__icon"><i class="fa-solid fa-circle-check"></i></div>
           <h3>作業開始</h3>
-          <p>ご納得いただいてから作業に入ります。<br>作業後の追加請求はありません。</p>
+          <p>ご納得いただいてから作業に入ります。作業後の追加請求はありません。</p>
         </div>
       </div>
     </div>
@@ -396,9 +430,10 @@
   <!-- ========== お問い合わせ ========== -->
   <section class="contact" id="contact">
     <div class="container">
+      <p class="contact__pre">まずはお気軽に。売り込みは一切しません。</p>
       <p class="section-sub">Contact</p>
       <h2 class="section-title">お問い合わせ</h2>
-      <p class="contact__lead">お困りごとがありましたら、以下よりご連絡ください。<br>ご都合のよい方法でお気軽にどうぞ。</p>
+      <p class="contact__lead">ご都合のよい方法でご連絡ください。</p>
 
       <div class="contact__grid">
 
@@ -410,27 +445,21 @@
           <a href="mailto:***@***.***" class="contact__card-link">メールを送る</a>
         </div>
 
-        <!-- LINE -->
-        <div class="contact__card reveal">
-          <div class="contact__card-icon"><i class="fa-brands fa-line"></i></div>
-          <p class="contact__card-label">LINE</p>
-          <div class="contact__qr">
-            <img src="line-qr.png" alt="LINE友だち追加QRコード" class="contact__qr-img"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div class="contact__qr-placeholder" style="display:none;">
-              <i class="fa-solid fa-qrcode"></i>
-              <span>QRコード準備中</span>
-            </div>
-          </div>
-          <p class="contact__card-note">写真や画面を送っていただくだけでもOKです</p>
-        </div>
-
-        <!-- フォーム -->
+        <!-- お問い合わせフォーム（Googleフォーム予定） -->
+        <!-- TODO: 以下のhrefのURLを実際のGoogleフォームURLに差し替えてください -->
         <div class="contact__card reveal">
           <div class="contact__card-icon"><i class="fa-solid fa-file-pen"></i></div>
           <p class="contact__card-label">お問い合わせフォーム</p>
-          <p class="contact__card-value">ご用件を記入してお送りいただけます</p>
-          <a href="mailto:***@***.***?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0D%0A%E3%81%94%E9%80%A3%E7%B5%A1%E5%85%88%EF%BC%9A%0D%0A%0D%0A%E3%81%94%E7%94%A8%E4%BB%B6%EF%BC%9A%0D%0A" class="contact__card-link">フォームを開く</a>
+          <p class="contact__card-value">必要事項を入力してお送りいただけます</p>
+          <a href="https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM_URL" target="_blank" rel="noopener" class="contact__card-link">フォームを開く</a>
+        </div>
+
+        <!-- LINE（準備中） -->
+        <div class="contact__card contact__card--disabled reveal">
+          <div class="contact__card-icon contact__card-icon--muted"><i class="fa-brands fa-line"></i></div>
+          <p class="contact__card-label">LINE</p>
+          <p class="contact__card-value">LINE公式アカウント準備中</p>
+          <span class="contact__card-link contact__card-link--disabled">準備中</span>
         </div>
 
       </div>
@@ -454,8 +483,9 @@
     </div>
   </footer>
 
-  <!-- ========== スクロールアニメーション ========== -->
+  <!-- ========== スクリプト ========== -->
   <script>
+    // スクロール表示アニメーション
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -466,10 +496,60 @@
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
+    // ナビゲーション背景切替
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('nav--scrolled', window.scrollY > 60);
     });
+
+    // 対応事例タブ切替
+    const tabs = document.querySelectorAll('.works__tab');
+    const panels = document.querySelectorAll('.works__panel');
+    const moreBtn = document.querySelector('.works__more-btn');
+    const moreText = document.querySelector('.works__more-text');
+
+    const activateTab = (tabName) => {
+      tabs.forEach(t => {
+        const isActive = t.dataset.tab === tabName;
+        t.classList.toggle('is-active', isActive);
+        t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+      panels.forEach(p => p.classList.toggle('is-active', p.dataset.panel === tabName));
+      // 「もっと見る」を閉じる
+      if (moreBtn && moreBtn.getAttribute('aria-expanded') === 'true') {
+        toggleMore(false);
+      }
+    };
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+    });
+
+    // サービスカードからタブ連動
+    document.querySelectorAll('.services__card[data-tab]').forEach(card => {
+      card.addEventListener('click', (e) => {
+        const tab = card.dataset.tab;
+        if (tab) activateTab(tab);
+      });
+    });
+
+    // 「もっと見る」
+    const toggleMore = (expand) => {
+      if (!moreBtn) return;
+      moreBtn.setAttribute('aria-expanded', expand ? 'true' : 'false');
+      moreBtn.classList.toggle('is-expanded', expand);
+      moreText.textContent = expand ? '閉じる' : 'もっと見る';
+      document.querySelectorAll('.works__panel.is-active .works__list li.is-hidden').forEach(li => {
+        li.classList.toggle('is-shown', expand);
+      });
+    };
+
+    if (moreBtn) {
+      moreBtn.addEventListener('click', () => {
+        const expanded = moreBtn.getAttribute('aria-expanded') === 'true';
+        toggleMore(!expanded);
+      });
+    }
   </script>
 
 </body>
