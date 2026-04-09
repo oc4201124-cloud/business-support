@@ -826,6 +826,29 @@ a {
   object-fit: contain;
 }
 
+.contact__qr-placeholder {
+  width: 160px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact__qr-placeholder i {
+  font-size: 2.8rem;
+}
+
+.contact__qr-placeholder span {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
 .contact__qr-hint {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.8rem;

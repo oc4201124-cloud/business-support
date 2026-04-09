@@ -313,7 +313,12 @@
             <div class="contact__card-icon contact__card-icon--line"><i class="fa-brands fa-line"></i></div>
             <p class="contact__card-label">LINEでもご相談できます</p>
             <div class="contact__qr">
-              <img src="line-qr.png" alt="LINE友だち追加QRコード" class="contact__qr-img">
+              <img src="line-qr.png" alt="LINE友だち追加QRコード" class="contact__qr-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="contact__qr-placeholder" style="display:none;">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>QRコード準備中</span>
+              </div>
             </div>
             <p class="contact__qr-hint">QRコードを読み取って友だち追加</p>
           </div>
