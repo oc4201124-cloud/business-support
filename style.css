@@ -1,0 +1,232 @@
+/* ========== リセット・共通 ========== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== セクション見出し ========== */
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #1a2e4a;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.section-title--white {
+  color: #fff;
+}
+
+.section-title--white::after {
+  background: #fff;
+}
+
+/* ========== ヘッダー ========== */
+.header {
+  background: #1a2e4a;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.header__catch {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  letter-spacing: 0.04em;
+}
+
+/* ========== サービス内容 ========== */
+.services {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.services__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.services__icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.services__card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-bottom: 12px;
+}
+
+.services__card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ========== 料金 ========== */
+.pricing {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.pricing__text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #1a2e4a;
+  font-weight: 700;
+  background: #f0f3f7;
+  padding: 32px;
+  border-radius: 8px;
+  border-left: 4px solid #1a2e4a;
+}
+
+/* ========== お問い合わせ ========== */
+.contact {
+  padding: 80px 0;
+  background: #1a2e4a;
+  color: #fff;
+  text-align: center;
+}
+
+.contact__info {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 32px 48px;
+  border-radius: 8px;
+}
+
+.contact__label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.contact__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.contact__link:hover {
+  border-color: #fff;
+}
+
+/* ========== フッター ========== */
+.footer {
+  background: #111d2e;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.8rem;
+}
+
+/* ========== レスポンシブ（タブレット） ========== */
+@media (max-width: 768px) {
+  .header {
+    padding: 60px 20px;
+  }
+
+  .header__title {
+    font-size: 1.5rem;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* ========== レスポンシブ（スマホ） ========== */
+@media (max-width: 480px) {
+  .header {
+    padding: 48px 16px;
+  }
+
+  .header__title {
+    font-size: 1.3rem;
+  }
+
+  .header__catch {
+    font-size: 0.95rem;
+  }
+
+  .services,
+  .pricing,
+  .contact {
+    padding: 60px 0;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__info {
+    padding: 24px 28px;
+  }
+
+  .contact__link {
+    font-size: 1rem;
+  }
+}
