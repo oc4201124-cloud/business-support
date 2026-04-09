@@ -50,21 +50,6 @@
           </a>
         </div>
       </div>
-      <!-- ヒーロービジュアル（いらすとや等のイラストに差し替え可能） -->
-      <div class="hero__visual" aria-hidden="true">
-        <div class="hero__visual-circle">
-          <i class="fa-solid fa-laptop"></i>
-        </div>
-        <div class="hero__visual-sub hero__visual-sub--1">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-        </div>
-        <div class="hero__visual-sub hero__visual-sub--2">
-          <i class="fa-regular fa-comments"></i>
-        </div>
-        <div class="hero__visual-sub hero__visual-sub--3">
-          <i class="fa-solid fa-wifi"></i>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -77,19 +62,31 @@
 
       <div class="trust__grid">
         <div class="trust__card reveal">
-          <div class="trust__icon"><i class="fa-regular fa-face-smile"></i></div>
+          <!-- いらすとや：説明している人物のイラスト（例）illust/trust-person.png として配置 -->
+          <div class="trust__illust">
+            <img src="illust/trust-person.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
+          </div>
           <h3>押し売り・勧誘は<br>一切しません</h3>
           <p>無理な契約やサービスのお勧めはいたしません。お話を伺うだけでも大丈夫です。</p>
           <p class="trust__micro">※ご相談は無料です。無理な勧誘はいたしません</p>
         </div>
         <div class="trust__card reveal">
-          <div class="trust__icon"><i class="fa-regular fa-file-lines"></i></div>
+          <!-- いらすとや：書類を説明しているイラスト illust/trust-document.png -->
+          <div class="trust__illust">
+            <img src="illust/trust-document.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+          </div>
           <h3>事前お見積もり<br>無料</h3>
           <p>作業前に必ず内容と料金をご提示します。確認いただいてからの作業です。</p>
           <p class="trust__micro">※お見積もり内容に納得いただいてからの作業です</p>
         </div>
         <div class="trust__card reveal">
-          <div class="trust__icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <!-- いらすとや：お金の説明をしているイラスト illust/trust-money.png -->
+          <div class="trust__illust">
+            <img src="illust/trust-money.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          </div>
           <h3>追加請求なし<br>明朗会計</h3>
           <p>お見積もり後の追加料金は発生しません。想定外は必ず事前にご相談します。</p>
           <p class="trust__micro">※想定外のことがあれば必ず事前にご相談します</p>
@@ -105,8 +102,10 @@
       <h2 class="section-title">運営者について</h2>
 
       <div class="about__box">
-        <!-- 左：プロフィールイラスト（いらすとやのPC作業中イラストに差し替え可能） -->
+        <!-- 左：プロフィールイラスト -->
+        <!-- いらすとや：パソコン作業中の人物イラストを illust/about-person.png として配置 -->
         <div class="about__illust">
+          <img src="illust/about-person.png" alt="" class="about__illust-img" onerror="this.parentElement.classList.add('is-icon')">
           <div class="about__illust-inner">
             <i class="fa-solid fa-user-tie"></i>
           </div>
@@ -157,25 +156,48 @@
       <h2 class="section-title">こんな方に向いています</h2>
       <p class="section-lead">一つでも当てはまる方は、お気軽にお問い合わせください。</p>
 
+      <!--
+        各カードにいらすとやの「困っている」系イラストを配置予定：
+          illust/rec-phone.png （スマホで困る）
+          illust/rec-money.png （通信費で悩む）
+          illust/rec-pc.png   （パソコンで困る）
+          illust/rec-tool.png （ツール選びで迷う）
+          illust/rec-help.png （相談先が分からない）
+      -->
       <div class="recommend__grid">
         <div class="recommend__card reveal">
-          <div class="recommend__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <div class="recommend__icon">
+            <img src="illust/rec-phone.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          </div>
           <p class="recommend__text">スマホの操作に<br>不安がある方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__icon"><i class="fa-solid fa-yen-sign"></i></div>
+          <div class="recommend__icon">
+            <img src="illust/rec-money.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-solid fa-yen-sign" aria-hidden="true"></i>
+          </div>
           <p class="recommend__text">通信費を<br>見直したい方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__icon"><i class="fa-solid fa-laptop"></i></div>
+          <div class="recommend__icon">
+            <img src="illust/rec-pc.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+          </div>
           <p class="recommend__text">パソコンの使い方を<br>相談したい方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="recommend__icon">
+            <img src="illust/rec-tool.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+          </div>
           <p class="recommend__text">便利なツールを<br>取り入れたい方</p>
         </div>
         <div class="recommend__card reveal">
-          <div class="recommend__icon"><i class="fa-solid fa-circle-question"></i></div>
+          <div class="recommend__icon">
+            <img src="illust/rec-help.png" alt="" onerror="this.parentElement.classList.add('is-icon')">
+            <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+          </div>
           <p class="recommend__text">何から相談すれば<br>いいか分からない方</p>
         </div>
       </div>
@@ -271,70 +293,255 @@
 
         <!-- スマホ -->
         <div class="works__panel is-active" data-panel="phone" id="works-phone">
-          <ul class="works__list">
-            <li><i class="fa-solid fa-mobile-screen"></i><div><strong>60代男性のスマホ初期設定</strong><span>NetflixがTVで見られないお悩みの解決と、不要オプションの整理を行いました。</span></div></li>
-            <li><i class="fa-solid fa-mobile-screen"></i><div><strong>60代ご夫婦のガラケー→iPhone移行</strong><span>操作に不安のあったお二人が、安心して使えるようになるまで対応しました。</span></div></li>
-            <li><i class="fa-solid fa-mobile-screen"></i><div><strong>30代女性のAndroid→iPhone機種変更</strong><span>データ移行までスムーズに完了しました。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-mobile-screen"></i><div><strong>お子様の初めてのスマホ導入</strong><span>機種選びから初期設定・フィルタリングまで対応しました。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-mobile-screen"></i><div><strong>iPhoneのアップデートサポート</strong><span>アップデート時の設定や動作確認を行いました。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-mobile-screen"></i><div><strong>LINE・YouTubeなどの操作サポート</strong><span>使い方のご案内を行いました。</span></div></li>
-          </ul>
+          <div class="wcard-grid">
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3 class="wcard__title">スマホ初期設定＆Netflix設定</h3>
+              <p class="wcard__who">60代男性</p>
+              <p class="wcard__desc">初期設定とあわせて、NetflixがTVで見られないお悩みの解決と不要オプションの整理を行いました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>テレビでNetflixが見られるように</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <h3 class="wcard__title">ガラケー → iPhone 移行</h3>
+              <p class="wcard__who">60代ご夫婦</p>
+              <p class="wcard__desc">操作に不安のあったお二人が、安心して使えるようになるまでサポートしました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>ガラケーからスマホへ移行完了</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+              <h3 class="wcard__title">Android → iPhone 機種変更</h3>
+              <p class="wcard__who">30代女性</p>
+              <p class="wcard__desc">機種選びのご相談から、データ移行までまとめてサポートしました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>データを引き継いでスムーズに移行</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-child"></i></div>
+              <h3 class="wcard__title">お子様の初めてのスマホ導入</h3>
+              <p class="wcard__desc">機種選びから初期設定・フィルタリング設定までトータルで対応しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>安心して使えるスマホ環境に</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+              <h3 class="wcard__title">iPhone アップデートサポート</h3>
+              <p class="wcard__desc">アップデート時の設定・動作確認までフォローしました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>最新バージョンで安心して使用</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-brands fa-line"></i></div>
+              <h3 class="wcard__title">LINE・YouTube の使い方サポート</h3>
+              <p class="wcard__desc">毎日使うアプリの基本操作から便利な使い方までご案内しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>「自分でできる」と好評いただきました</span></div>
+            </article>
+          </div>
         </div>
 
         <!-- 通信費 -->
         <div class="works__panel" data-panel="money" id="works-money">
-          <ul class="works__list">
-            <li><i class="fa-solid fa-sack-dollar"></i><div><strong>大手3キャリア→格安SIMへの乗り換え</strong><span>毎月の通信費の削減をお手伝いしました。</span></div></li>
-            <li><i class="fa-solid fa-sack-dollar"></i><div><strong>光回線（JCOM・フレッツ光など）の見直し</strong><span>条件の合う回線への切り替えをサポート。</span></div></li>
-            <li><i class="fa-solid fa-sack-dollar"></i><div><strong>楽天モバイルで自宅ネット環境を構築</strong><span>工事不要で通信費を抑えた環境を整えました。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-sack-dollar"></i><div><strong>親世代の通信契約見直し</strong><span>不要な契約を整理し、状況に合ったプランをご提案しました。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-sack-dollar"></i><div><strong>固定費の見直し・支出整理</strong><span>家計の見直しについてアドバイスを行いました。</span></div></li>
-          </ul>
+          <div class="wcard-grid">
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-sim-card"></i></div>
+              <h3 class="wcard__title">大手キャリア → 格安SIMへ</h3>
+              <p class="wcard__who">通信費の見直し</p>
+              <p class="wcard__desc">大手3キャリアからの乗り換えで、毎月の通信費を大きく削減しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>毎月の通信費を大幅に削減</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-wifi"></i></div>
+              <h3 class="wcard__title">光回線の見直し</h3>
+              <p class="wcard__who">利用状況に合わせて</p>
+              <p class="wcard__desc">利用状況に合った回線へ切り替えて、毎月のコストを見直しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>家計にやさしい回線へ乗り換え</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-tower-cell"></i></div>
+              <h3 class="wcard__title">楽天モバイルで自宅ネット環境</h3>
+              <p class="wcard__who">工事不要のネット構築</p>
+              <p class="wcard__desc">工事不要の楽天モバイルを活用して、自宅のネット環境を整えました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>工事なしで通信費を抑えて実現</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-user-group"></i></div>
+              <h3 class="wcard__title">親世代の通信契約見直し</h3>
+              <p class="wcard__desc">不要な契約を整理し、状況に合ったプランへの切り替えをご提案しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>ムダのないプランに整理</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-chart-line"></i></div>
+              <h3 class="wcard__title">固定費の見直し・支出整理</h3>
+              <p class="wcard__desc">通信費を含む固定費全体の見直しについてアドバイスを行いました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>家計のムダをまとめて整理</span></div>
+            </article>
+          </div>
         </div>
 
         <!-- PC -->
         <div class="works__panel" data-panel="pc" id="works-pc">
-          <ul class="works__list">
-            <li><i class="fa-solid fa-laptop"></i><div><strong>Windows 10 → 11 へのアップグレード</strong><span>設定から動作確認まで対応しました。</span></div></li>
-            <li><i class="fa-solid fa-laptop"></i><div><strong>新しいPCへのデータ移行・環境構築</strong><span>以前の使用環境を引き継いでの移行をサポート。</span></div></li>
-            <li><i class="fa-solid fa-laptop"></i><div><strong>ゲーミングPC購入サポート</strong><span>用途・予算に合わせた機種選びをご提案しました。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-laptop"></i><div><strong>Macの初期設定・基本操作サポート</strong><span>初めてお使いになる方にも対応しています。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-laptop"></i><div><strong>Windows・Mac両対応</strong><span>どちらのOSでもサポート可能です。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-laptop"></i><div><strong>ファイル整理・データ管理</strong><span>写真や書類の整理、バックアップの見直しを行いました。</span></div></li>
-          </ul>
+          <div class="wcard-grid">
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-brands fa-windows"></i></div>
+              <h3 class="wcard__title">Windows 10 → 11 アップグレード</h3>
+              <p class="wcard__who">OSアップグレード</p>
+              <p class="wcard__desc">互換性の確認から設定・動作確認まで丁寧に対応しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>最新OSで安心して使える環境に</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+              <h3 class="wcard__title">新しいPCへのデータ移行</h3>
+              <p class="wcard__who">環境構築</p>
+              <p class="wcard__desc">以前の使用環境を引き継ぎつつ、スムーズに新環境へ移行しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>いつもの操作感そのままに移行完了</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-gamepad"></i></div>
+              <h3 class="wcard__title">ゲーミングPC購入サポート</h3>
+              <p class="wcard__who">機種選びのご相談</p>
+              <p class="wcard__desc">用途と予算に合わせた機種選びからご提案しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>予算内でベストな1台を選定</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-brands fa-apple"></i></div>
+              <h3 class="wcard__title">Macの初期設定・基本操作</h3>
+              <p class="wcard__desc">はじめてMacを使う方にも分かりやすくご案内しています。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>初めてのMacでも安心スタート</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-desktop"></i></div>
+              <h3 class="wcard__title">Windows・Mac 両対応</h3>
+              <p class="wcard__desc">どちらのOSでも幅広くサポート可能です。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>OSを問わずワンストップで対応</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-folder-open"></i></div>
+              <h3 class="wcard__title">ファイル整理・データ管理</h3>
+              <p class="wcard__desc">写真や書類の整理、バックアップの見直しまで対応しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>大切なデータをスッキリ整理</span></div>
+            </article>
+          </div>
         </div>
 
         <!-- SNS -->
         <div class="works__panel" data-panel="sns" id="works-sns">
-          <ul class="works__list">
-            <li><i class="fa-solid fa-bullhorn"></i><div><strong>X（旧Twitter）の投稿サポート</strong><span>構成・文章・画像制作まで対応しています。</span></div></li>
-            <li><i class="fa-solid fa-bullhorn"></i><div><strong>YouTubeチャンネル運営</strong><span>登録者4,000人超のチャンネルを運営中です。</span></div></li>
-            <li><i class="fa-solid fa-pen-to-square"></i><div><strong>ノウハウ系ブログ記事を26記事以上公開</strong><span>IT・節約・生活ノウハウの執筆実績があります。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-bullhorn"></i><div><strong>SNS運用サポート</strong><span>発信内容の整理や投稿づくりをお手伝いします。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-bullhorn"></i><div><strong>アイコン作成・画像制作</strong><span>発信に合わせた見た目づくりを支援しています。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-pen-to-square"></i><div><strong>ブログ記事の構成・文章作成サポート</strong><span>読みやすく伝わる形への整理を行っています。</span></div></li>
-          </ul>
+          <div class="wcard-grid">
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-brands fa-x-twitter"></i></div>
+              <h3 class="wcard__title">X（旧Twitter）投稿サポート</h3>
+              <p class="wcard__who">SNS運用支援</p>
+              <p class="wcard__desc">投稿の構成・文章・画像制作までトータルでサポートしました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>迷わず発信できる仕組みに</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-brands fa-youtube"></i></div>
+              <h3 class="wcard__title">YouTubeチャンネル運営</h3>
+              <p class="wcard__who">自身で運営中</p>
+              <p class="wcard__desc">登録者4,000人超のチャンネルを継続運営しています。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>登録者4,000人超のチャンネル運営実績</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-pen-to-square"></i></div>
+              <h3 class="wcard__title">ノウハウ系ブログ 26記事以上</h3>
+              <p class="wcard__who">執筆・情報発信</p>
+              <p class="wcard__desc">IT・節約・生活ノウハウを中心に、読みやすい記事を継続発信しています。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>最高閲覧数500件超の記事実績</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-share-nodes"></i></div>
+              <h3 class="wcard__title">SNS運用サポート</h3>
+              <p class="wcard__desc">発信内容の整理や投稿づくりをお手伝いします。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>発信のハードルが下がったと好評</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-image"></i></div>
+              <h3 class="wcard__title">アイコン・画像制作</h3>
+              <p class="wcard__desc">発信に合わせた見た目づくりを支援しています。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>自分らしいビジュアルに整える</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-book-open"></i></div>
+              <h3 class="wcard__title">ブログ記事の構成・文章作成</h3>
+              <p class="wcard__desc">読みやすく伝わる形への整理をお手伝いします。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>伝わる形に整理</span></div>
+            </article>
+          </div>
         </div>
 
         <!-- その他 -->
         <div class="works__panel" data-panel="other" id="works-other">
-          <ul class="works__list">
-            <li><i class="fa-solid fa-gears"></i><div><strong>面倒な作業の整理・効率化</strong><span>繰り返し作業の負担軽減をサポートしています。</span></div></li>
-            <li><i class="fa-solid fa-circle-question"></i><div><strong>スマホ・PCのちょっとした困りごと相談</strong><span>設定・操作・トラブルなど幅広くお受けしています。</span></div></li>
-            <li><i class="fa-solid fa-handshake"></i><div><strong>対面・オフ会でのデジタル活用サポート</strong><span>初心者の方にも分かりやすい説明を心がけています。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-gears"></i><div><strong>最新ツールの導入サポート</strong><span>初期設定から使い始めまでご案内します。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-gears"></i><div><strong>Excel・スプレッドシートの作成・整理</strong><span>表の作成からデータ整理・関数の活用まで対応。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-gears"></i><div><strong>文章作成・情報整理のサポート</strong><span>伝わりやすい形への整理を行っています。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-circle-question"></i><div><strong>初心者向けITサポート</strong><span>「何を聞けばいいか分からない」状態からのご相談にも対応します。</span></div></li>
-            <li class="is-hidden"><i class="fa-solid fa-circle-question"></i><div><strong>スマホ・PCのトラブル解決</strong><span>不具合や接続トラブルの原因特定・解決を支援します。</span></div></li>
-          </ul>
+          <div class="wcard-grid">
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-gears"></i></div>
+              <h3 class="wcard__title">作業の整理・効率化</h3>
+              <p class="wcard__who">業務改善のサポート</p>
+              <p class="wcard__desc">繰り返し作業の整理や、便利ツールの導入をご提案しました。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>作業の負担をまるごと軽減</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-circle-question"></i></div>
+              <h3 class="wcard__title">スマホ・PCの困りごと相談</h3>
+              <p class="wcard__who">なんでも相談</p>
+              <p class="wcard__desc">「何を聞けばいいか分からない」からのご相談もお受けしています。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>1人で悩まなくて大丈夫な環境に</span></div>
+            </article>
+            <article class="wcard wcard--featured">
+              <div class="wcard__tag">代表事例</div>
+              <div class="wcard__icon"><i class="fa-solid fa-handshake"></i></div>
+              <h3 class="wcard__title">対面・オフ会サポート</h3>
+              <p class="wcard__who">対面でのご相談</p>
+              <p class="wcard__desc">初心者の方にも分かりやすい説明を心がけて対応しています。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>対面だから伝わる安心感</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3 class="wcard__title">最新ツールの導入サポート</h3>
+              <p class="wcard__desc">初期設定から使い始めまでやさしくご案内します。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>新しいツールを迷わず導入</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-table-cells"></i></div>
+              <h3 class="wcard__title">Excel・スプレッドシート</h3>
+              <p class="wcard__desc">表の作成からデータ整理・関数の活用まで対応します。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>日々の集計作業をラクに</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-file-lines"></i></div>
+              <h3 class="wcard__title">文章作成・情報整理</h3>
+              <p class="wcard__desc">伝わりやすい形への整理をお手伝いします。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>読み手に伝わる文章に</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <h3 class="wcard__title">初心者向けITサポート</h3>
+              <p class="wcard__desc">「何を聞けばいいか分からない」状態からのご相談にも対応します。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>基礎から安心してスタート</span></div>
+            </article>
+            <article class="wcard is-hidden">
+              <div class="wcard__icon"><i class="fa-solid fa-wrench"></i></div>
+              <h3 class="wcard__title">スマホ・PCのトラブル解決</h3>
+              <p class="wcard__desc">不具合や接続トラブルの原因特定・解決を支援します。</p>
+              <div class="wcard__result"><i class="fa-solid fa-circle-check"></i><span>原因を切り分けて迅速に解決</span></div>
+            </article>
+          </div>
         </div>
 
       </div>
 
       <div class="works__more-wrap">
         <button type="button" class="works__more-btn" aria-expanded="false">
-          <span class="works__more-text">もっと見る</span>
+          <span class="works__more-text">他の事例も見る</span>
           <i class="fa-solid fa-chevron-down"></i>
         </button>
       </div>
@@ -433,6 +640,10 @@
       <p class="contact__pre">まずはお気軽に。売り込みは一切しません。</p>
       <p class="section-sub">Contact</p>
       <h2 class="section-title">お問い合わせ</h2>
+      <!-- いらすとや：相談・受付系のイラストを illust/contact.png として配置 -->
+      <div class="contact__illust">
+        <img src="illust/contact.png" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
       <p class="contact__lead">ご都合のよい方法でご連絡ください。</p>
 
       <div class="contact__grid">
@@ -445,21 +656,26 @@
           <a href="mailto:***@***.***" class="contact__card-link">メールを送る</a>
         </div>
 
-        <!-- お問い合わせフォーム（Googleフォーム予定） -->
-        <!-- TODO: 以下のhrefのURLを実際のGoogleフォームURLに差し替えてください -->
+        <!-- お問い合わせフォーム -->
+        <!-- TODO: 下記 href を実際のフォームURLに差し替えてください -->
         <div class="contact__card reveal">
           <div class="contact__card-icon"><i class="fa-solid fa-file-pen"></i></div>
           <p class="contact__card-label">お問い合わせフォーム</p>
           <p class="contact__card-value">必要事項を入力してお送りいただけます</p>
-          <a href="https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM_URL" target="_blank" rel="noopener" class="contact__card-link">フォームを開く</a>
+          <a href="#" class="contact__card-link">フォームを開く</a>
         </div>
 
-        <!-- LINE（準備中） -->
-        <div class="contact__card contact__card--disabled reveal">
-          <div class="contact__card-icon contact__card-icon--muted"><i class="fa-brands fa-line"></i></div>
-          <p class="contact__card-label">LINE</p>
-          <p class="contact__card-value">LINE公式アカウント準備中</p>
-          <span class="contact__card-link contact__card-link--disabled">準備中</span>
+        <!-- LINE -->
+        <div class="contact__card contact__card--line reveal">
+          <div class="contact__card-icon contact__card-icon--line"><i class="fa-brands fa-line"></i></div>
+          <p class="contact__card-label">LINEで相談できます</p>
+          <div class="contact__qr">
+            <img src="line-qr.png" alt="LINE友だち追加QRコード" class="contact__qr-img">
+          </div>
+          <p class="contact__qr-note">スマホの方は長押し、またはLINEアプリから読み取ってご連絡ください。</p>
+          <a href="line-qr.png" target="_blank" rel="noopener" class="contact__card-link contact__card-link--line">
+            <i class="fa-brands fa-line"></i> LINEで相談する
+          </a>
         </div>
 
       </div>
@@ -538,9 +754,9 @@
       if (!moreBtn) return;
       moreBtn.setAttribute('aria-expanded', expand ? 'true' : 'false');
       moreBtn.classList.toggle('is-expanded', expand);
-      moreText.textContent = expand ? '閉じる' : 'もっと見る';
-      document.querySelectorAll('.works__panel.is-active .works__list li.is-hidden').forEach(li => {
-        li.classList.toggle('is-shown', expand);
+      moreText.textContent = expand ? '閉じる' : '他の事例も見る';
+      document.querySelectorAll('.works__panel.is-active .wcard.is-hidden').forEach(card => {
+        card.classList.toggle('is-shown', expand);
       });
     };
 
