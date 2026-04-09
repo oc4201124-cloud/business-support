@@ -206,7 +206,7 @@
       <p class="section-lead">日常のお困りごとを幅広くお受けしています。<br>気になる項目をタップすると対応事例にジャンプします。</p>
 
       <div class="services__grid">
-        <a href="#works-phone" class="services__card reveal" data-tab="phone">
+        <a href="#works" class="services__card reveal" data-tab="phone">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-mobile-screen-button"></i>
           </div>
@@ -214,7 +214,7 @@
           <p>初期設定・アプリの使い方・機種変更など、スマホ全般のご相談にお応えします。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-money" class="services__card reveal" data-tab="money">
+        <a href="#works" class="services__card reveal" data-tab="money">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-yen-sign"></i>
           </div>
@@ -222,7 +222,7 @@
           <p>毎月の通信費の見直しや、ご家庭に合ったプランのご提案をしています。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-other" class="services__card reveal" data-tab="other">
+        <a href="#works" class="services__card reveal" data-tab="other">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-file-lines"></i>
           </div>
@@ -230,7 +230,7 @@
           <p>ビジネス文書・各種書類・SNS投稿の文章まで、作成のお手伝いをいたします。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-pc" class="services__card reveal" data-tab="pc">
+        <a href="#works" class="services__card reveal" data-tab="pc">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-folder-open"></i>
           </div>
@@ -238,7 +238,7 @@
           <p>写真やファイルの整理、バックアップなど、大切なデータの管理をサポートします。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-other" class="services__card reveal" data-tab="other">
+        <a href="#works" class="services__card reveal" data-tab="other">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-gears"></i>
           </div>
@@ -246,7 +246,7 @@
           <p>繰り返し作業の整理や、業務に役立つツールの導入をご案内します。</p>
           <span class="services__more">対応事例を見る <i class="fa-solid fa-arrow-right"></i></span>
         </a>
-        <a href="#works-sns" class="services__card reveal" data-tab="sns">
+        <a href="#works" class="services__card reveal" data-tab="sns">
           <div class="services__icon-wrap">
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -548,16 +548,16 @@
       <p class="section-sub">Price</p>
       <h2 class="section-title">料金について</h2>
 
-      <div class="pricing__simple reveal">
+      <div class="pricing__simple">
         <p class="pricing__lead">
           料金は内容に応じて柔軟に対応しています。<br>
           「これくらいお願いするといくら？」なども、<br class="sp-only">お気軽にご相談ください。
         </p>
 
-        <p class="pricing__highlight">
+        <div class="pricing__highlight">
           <i class="fa-solid fa-comments"></i>
           <span>初回相談は<mark>無料</mark>です</span>
-        </p>
+        </div>
 
         <p class="pricing__sub">
           無理な営業や押し売りは一切ありませんので、<br class="sp-only">安心してお問い合わせください。
@@ -706,11 +706,18 @@
       tab.addEventListener('click', () => activateTab(tab.dataset.tab));
     });
 
-    // サービスカードからタブ連動
+    // サービスカードからタブ連動（works セクション見出し位置までスクロール）
     document.querySelectorAll('.services__card[data-tab]').forEach(card => {
       card.addEventListener('click', (e) => {
+        e.preventDefault();
         const tab = card.dataset.tab;
         if (tab) activateTab(tab);
+        const worksSection = document.getElementById('works');
+        if (worksSection) {
+          const navHeight = 80;
+          const top = worksSection.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
       });
     });
 
