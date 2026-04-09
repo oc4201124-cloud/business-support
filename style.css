@@ -278,47 +278,6 @@ a {
   opacity: 0.92;
 }
 
-/* ========== 出張エリア告知バナー ========== */
-.area-notice {
-  background: #fff;
-  border-bottom: 1px solid var(--border-soft);
-  padding: 22px 0;
-}
-
-.area-notice__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  text-align: left;
-}
-
-.area-notice i {
-  font-size: 1.6rem;
-  color: var(--primary);
-  flex-shrink: 0;
-}
-
-.area-notice p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.area-notice strong {
-  display: block;
-  color: var(--primary);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.area-notice span {
-  display: block;
-  font-size: 0.82rem;
-  color: var(--text-mute);
-  margin-top: 2px;
-}
-
 /* ========== フェードインアニメーション ========== */
 .reveal {
   opacity: 0;
@@ -774,166 +733,41 @@ a {
   background: var(--bg);
 }
 
-.pricing__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 960px;
-  margin: 0 auto 32px;
-}
-
-.pricing__card {
+.pricing__simple {
+  max-width: 640px;
+  margin: 40px auto 0;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 40px 28px 36px;
+  border-radius: 16px;
+  padding: 56px 40px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
 }
 
-.pricing__card:hover {
-  transform: translateY(-4px);
-  border-color: var(--primary-light);
-  box-shadow: 0 12px 32px rgba(74, 111, 165, 0.1);
-}
-
-.pricing__icon {
-  width: 64px;
-  height: 64px;
+.pricing__simple-icon {
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: var(--bg-soft);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 18px;
+  margin: 0 auto 22px;
   color: var(--primary);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
-.pricing__label {
+.pricing__simple-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 16px;
+  letter-spacing: 0.04em;
+}
+
+.pricing__simple-note {
   font-size: 0.95rem;
   color: var(--text-soft);
-  margin-bottom: 14px;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-}
-
-.pricing__price {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 18px;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-}
-
-.pricing__free {
-  color: var(--primary);
-  font-size: 2.2rem;
-}
-
-.pricing__yen {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-left: 2px;
-}
-
-.pricing__unit {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--text-mute);
-  font-weight: 400;
-  margin-top: 4px;
-  letter-spacing: 0.04em;
-}
-
-.pricing__desc {
-  font-size: 0.88rem;
-  color: var(--text-soft);
   line-height: 1.9;
-}
-
-.pricing__note-box {
-  max-width: 760px;
-  margin: 0 auto;
-  background: var(--card);
-  border-left: 3px solid var(--primary);
-  border-radius: 8px;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.pricing__note-box i {
-  color: var(--primary);
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-.pricing__note-box p {
-  font-size: 0.88rem;
-  color: var(--text-soft);
-  line-height: 1.7;
-  margin: 0;
-}
-
-.pricing__promise {
-  max-width: 760px;
-  margin: 0 auto;
-  background: #fffdf5;
-  border: 1px solid #f0e3c0;
-  border-radius: 14px;
-  padding: 28px 32px 24px;
-}
-
-.pricing__promise-title {
-  color: var(--primary);
-  font-size: 0.98rem;
-  font-weight: 700;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.pricing__promise-title i {
-  color: var(--accent-warm);
-  font-size: 1.1rem;
-}
-
-.pricing__promise ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.pricing__promise li {
-  font-size: 0.88rem;
-  color: var(--text-soft);
-  line-height: 1.75;
-  padding-left: 20px;
-  position: relative;
-}
-
-.pricing__promise li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--primary);
-}
-
-.pricing__promise strong {
-  display: inline-block;
-  color: var(--primary);
-  font-weight: 700;
-  margin-right: 8px;
 }
 
 /* ========== ご相談の流れ ========== */
@@ -1257,12 +1091,6 @@ a {
     gap: 16px;
   }
 
-  .pricing__grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 440px;
-  }
-
   .contact__grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1342,26 +1170,6 @@ a {
     font-size: 0.9rem;
   }
 
-  .area-notice {
-    padding: 18px 0;
-  }
-
-  .area-notice__inner {
-    gap: 12px;
-  }
-
-  .area-notice i {
-    font-size: 1.3rem;
-  }
-
-  .area-notice strong {
-    font-size: 0.9rem;
-  }
-
-  .area-notice span {
-    font-size: 0.76rem;
-  }
-
   .sp-only { display: inline; }
 
   .about,
@@ -1413,12 +1221,12 @@ a {
     padding: 28px 22px 24px;
   }
 
-  .pricing__promise {
-    padding: 22px 22px 18px;
+  .pricing__simple {
+    padding: 40px 24px;
   }
 
-  .pricing__promise li {
-    font-size: 0.85rem;
+  .pricing__simple-text {
+    font-size: 1.25rem;
   }
 
   .about__box {
@@ -1453,23 +1261,6 @@ a {
 
   .works__head h3 {
     font-size: 1rem;
-  }
-
-  .pricing__card {
-    padding: 32px 24px 28px;
-  }
-
-  .pricing__price {
-    font-size: 1.9rem;
-  }
-
-  .pricing__free {
-    font-size: 1.9rem;
-  }
-
-  .pricing__note-box {
-    padding: 16px 20px;
-    gap: 12px;
   }
 
   .contact__card {
