@@ -1475,12 +1475,20 @@ mark {
 }
 
 .contact__qr-note {
-  font-size: 0.78rem;
-  color: var(--text-mute);
-  line-height: 1.75;
-  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.85;
+  margin-top: 8px;
   text-align: center;
-  padding: 0 8px;
+  padding: 14px 16px;
+  background: var(--bg-alt);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact__qr-note strong {
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .contact__card-link--line {
