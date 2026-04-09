@@ -525,56 +525,79 @@ mark {
 }
 
 /* 実績バッジ */
-.about__badges {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+/* ========== 実績 ========== */
+.achievements {
   max-width: 960px;
   margin: 0 auto;
-}
-
-.about__badge {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 32px 24px 26px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about__badge:hover {
+.achievements__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+  position: relative;
+  display: inline-block;
+  padding: 0 24px;
+}
+
+.achievements__title::before,
+.achievements__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.achievements__title::before { left: 0; }
+.achievements__title::after { right: 0; }
+
+.achievement-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.achievement-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
+  font-weight: 700;
+  text-align: center;
+  min-width: 240px;
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+}
+
+.achievement-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+  border-color: var(--primary-light);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
 }
 
-.about__badge-num {
-  font-size: 2.6rem;
-  font-weight: 700;
+.achievement-card i {
   color: var(--primary);
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  margin-bottom: 4px;
+  font-size: 1.15rem;
+  flex-shrink: 0;
 }
 
-.about__badge-num span {
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-left: 4px;
-  color: var(--primary);
-}
-
-.about__badge-label {
-  font-size: 0.92rem;
-  font-weight: 700;
+.achievement-card p {
+  font-size: 0.95rem;
   color: var(--text);
-  margin-bottom: 8px;
-  letter-spacing: 0.04em;
-}
-
-.about__badge-desc {
-  font-size: 0.8rem;
-  color: var(--text-mute);
-  line-height: 1.7;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* ========== こんな方に向いています ========== */
@@ -1469,10 +1492,16 @@ mark {
     margin-top: 0;
   }
 
-  .about__badges {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    max-width: 440px;
+  .achievement-list {
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .achievement-card {
+    width: 100%;
+    min-width: 0;
   }
 
   .recommend__grid {
@@ -1619,12 +1648,12 @@ mark {
     font-size: 1.2rem;
   }
 
-  .about__badge {
-    padding: 26px 22px 22px;
+  .achievement-card {
+    padding: 18px 20px;
   }
 
-  .about__badge-num {
-    font-size: 2.2rem;
+  .achievement-card p {
+    font-size: 0.9rem;
   }
 
   .recommend__grid {
