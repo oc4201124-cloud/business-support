@@ -168,16 +168,62 @@ a {
 }
 
 /* ========== ヒーローセクション ========== */
+.sp-only { display: none; }
+
 .hero {
   position: relative;
-  min-height: 72vh;
+  min-height: 78vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
-  padding: 120px 0 80px;
+  padding: 130px 0 80px;
   overflow: hidden;
+}
+
+.hero__area {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 7px 20px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  margin-bottom: 28px;
+}
+
+.hero__area i {
+  font-size: 0.88rem;
+}
+
+.hero__badges {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero__badges li {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.88);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.03em;
+}
+
+.hero__badges i {
+  color: #a8c8f0;
+  font-size: 0.95rem;
 }
 
 .hero__bg {
@@ -283,6 +329,60 @@ a {
 .revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ========== 安心のお約束 ========== */
+.trust {
+  padding: 90px 0;
+  background: var(--bg);
+}
+
+.trust__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.trust__card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px 24px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.trust__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-light);
+  box-shadow: 0 12px 30px rgba(74, 111, 165, 0.1);
+}
+
+.trust__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.trust__card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.trust__card p {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.85;
 }
 
 /* ========== 運営者情報 ========== */
@@ -779,6 +879,151 @@ a {
   margin: 0;
 }
 
+.pricing__promise {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fffdf5;
+  border: 1px solid #f0e3c0;
+  border-radius: 14px;
+  padding: 28px 32px 24px;
+}
+
+.pricing__promise-title {
+  color: var(--primary);
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing__promise-title i {
+  color: var(--accent-warm);
+  font-size: 1.1rem;
+}
+
+.pricing__promise ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing__promise li {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.75;
+  padding-left: 20px;
+  position: relative;
+}
+
+.pricing__promise li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.pricing__promise strong {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* ========== ご相談の流れ ========== */
+.flow {
+  padding: 90px 0;
+  background: var(--bg);
+}
+
+.flow__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.flow__step {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px 24px 28px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.flow__step:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-light);
+  box-shadow: 0 12px 30px rgba(74, 111, 165, 0.08);
+}
+
+.flow__step:not(:last-child)::after {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+  color: var(--primary-light);
+  font-size: 1.1rem;
+  z-index: 1;
+  background: var(--bg);
+  padding: 0 4px;
+}
+
+.flow__num {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  background: var(--primary-accent);
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.flow__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.flow__step h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.flow__step p {
+  font-size: 0.86rem;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+
+.flow__step p strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
 /* ========== お問い合わせ ========== */
 .contact {
   padding: 90px 0;
@@ -875,6 +1120,17 @@ a {
   font-size: 0.82rem;
   margin-top: 4px;
   letter-spacing: 0.04em;
+}
+
+.contact__card-note {
+  color: var(--text-soft);
+  font-size: 0.8rem;
+  line-height: 1.7;
+  margin-top: 4px;
+  padding: 8px 14px;
+  background: var(--bg-soft);
+  border-radius: 8px;
+  letter-spacing: 0.02em;
 }
 
 .contact__qr {
@@ -1030,6 +1286,24 @@ a {
     padding: 10px 0;
     text-align: left;
   }
+
+  .trust__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .flow__steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .flow__step:not(:last-child)::after {
+    display: none;
+  }
+
+  .hero__badges {
+    gap: 14px;
+  }
 }
 
 /* ========== レスポンシブ（スマホ） ========== */
@@ -1088,12 +1362,63 @@ a {
     font-size: 0.76rem;
   }
 
+  .sp-only { display: inline; }
+
   .about,
   .recommend,
   .services,
   .pricing,
-  .contact {
+  .contact,
+  .trust,
+  .flow {
     padding: 64px 0;
+  }
+
+  .hero {
+    padding: 110px 0 60px;
+  }
+
+  .hero__area {
+    font-size: 0.76rem;
+    padding: 6px 16px;
+    margin-bottom: 22px;
+  }
+
+  .hero__badges {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 26px;
+    padding-top: 22px;
+  }
+
+  .hero__badges li {
+    font-size: 0.8rem;
+  }
+
+  .trust__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .trust__card {
+    padding: 28px 22px 24px;
+  }
+
+  .flow__steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .flow__step {
+    padding: 28px 22px 24px;
+  }
+
+  .pricing__promise {
+    padding: 22px 22px 18px;
+  }
+
+  .pricing__promise li {
+    font-size: 0.85rem;
   }
 
   .about__box {
