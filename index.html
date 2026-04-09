@@ -102,15 +102,9 @@
       <h2 class="section-title">運営者について</h2>
 
       <div class="about__box">
-        <!-- 左：プロフィールイラスト -->
-        <!-- いらすとや：パソコン作業中の人物イラストを illust/about-person.png として配置 -->
+        <!-- 運営者アイコン -->
         <div class="about__illust">
-          <img src="illust/about-person.png" alt="" class="about__illust-img" onerror="this.parentElement.classList.add('is-icon')">
-          <div class="about__illust-inner">
-            <i class="fa-solid fa-user-tie"></i>
-          </div>
-          <div class="about__illust-deco about__illust-deco--1"><i class="fa-solid fa-laptop"></i></div>
-          <div class="about__illust-deco about__illust-deco--2"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <img src="images/profile.png" alt="運営者アイコン" class="profile-icon">
         </div>
 
         <div class="about__body">
@@ -548,53 +542,27 @@
     </div>
   </section>
 
-  <!-- ========== 料金（3カラム） ========== -->
+  <!-- ========== 料金 ========== -->
   <section class="pricing" id="pricing">
     <div class="container">
       <p class="section-sub">Price</p>
-      <h2 class="section-title">料金</h2>
-      <p class="section-lead">内容や作業量に応じて、事前にお見積もりをご提示します。</p>
+      <h2 class="section-title">料金について</h2>
 
-      <div class="pricing__grid">
-        <div class="pricing__card pricing__card--free reveal">
-          <p class="pricing__plan">初回相談</p>
-          <p class="pricing__amount"><span class="pricing__big">無料</span></p>
-          <p class="pricing__desc">まずはお話だけでも承ります</p>
-          <ul class="pricing__features">
-            <li><i class="fa-solid fa-check"></i>内容のヒアリング</li>
-            <li><i class="fa-solid fa-check"></i>作業内容のご提案</li>
-            <li><i class="fa-solid fa-check"></i>お見積もりのご提示</li>
-          </ul>
-          <span class="pricing__badge"><mark>初回相談無料</mark></span>
-        </div>
+      <div class="pricing__simple reveal">
+        <p class="pricing__lead">
+          料金は内容に応じて柔軟に対応しています。<br>
+          「これくらいお願いするといくら？」なども、<br class="sp-only">お気軽にご相談ください。
+        </p>
 
-        <div class="pricing__card reveal">
-          <p class="pricing__plan">オンライン</p>
-          <p class="pricing__amount"><span class="pricing__big">3,000</span><span class="pricing__unit">円〜／1時間</span></p>
-          <p class="pricing__desc">画面共有による遠隔サポート</p>
-          <ul class="pricing__features">
-            <li><i class="fa-solid fa-check"></i>全国対応</li>
-            <li><i class="fa-solid fa-check"></i>画面共有でご説明</li>
-            <li><i class="fa-solid fa-check"></i>土日夜間もご相談可</li>
-          </ul>
-        </div>
+        <p class="pricing__highlight">
+          <i class="fa-solid fa-comments"></i>
+          <span>初回相談は<mark>無料</mark>です</span>
+        </p>
 
-        <div class="pricing__card reveal">
-          <p class="pricing__plan">出張</p>
-          <p class="pricing__amount"><span class="pricing__big">5,000</span><span class="pricing__unit">円〜／1時間</span></p>
-          <p class="pricing__desc">ご自宅・オフィスへお伺い</p>
-          <ul class="pricing__features">
-            <li><i class="fa-solid fa-check"></i><mark>君津・木更津対応</mark></li>
-            <li><i class="fa-solid fa-check"></i>対面でご説明</li>
-            <li><i class="fa-solid fa-check"></i>実機操作のサポート</li>
-          </ul>
-        </div>
+        <p class="pricing__sub">
+          無理な営業や押し売りは一切ありませんので、<br class="sp-only">安心してお問い合わせください。
+        </p>
       </div>
-
-      <p class="pricing__note">
-        <i class="fa-solid fa-circle-info"></i>
-        記載料金は目安です。作業内容や所要時間に応じて事前にお見積もりをご提示し、<mark>ご納得いただいてから作業を開始します</mark>ので、追加請求はございません。
-      </p>
     </div>
   </section>
 
@@ -637,42 +605,39 @@
   <!-- ========== お問い合わせ ========== -->
   <section class="contact" id="contact">
     <div class="container">
-      <p class="contact__pre">まずはお気軽に。売り込みは一切しません。</p>
       <p class="section-sub">Contact</p>
       <h2 class="section-title">お問い合わせ</h2>
-      <!-- いらすとや：相談・受付系のイラストを illust/contact.png として配置 -->
-      <div class="contact__illust">
-        <img src="illust/contact.png" alt="" onerror="this.parentElement.style.display='none'">
+
+      <div class="contact__intro">
+        <p class="cta-text">まずは「相談だけ」でも大歓迎です😊</p>
+        <p class="contact__lead">
+          スマホのこと、通信費のこと、<br class="sp-only">どんな小さなお悩みでもお気軽にご相談ください。
+        </p>
       </div>
-      <p class="contact__lead">ご都合のよい方法でご連絡ください。</p>
 
       <div class="contact__grid">
 
         <!-- メール -->
         <div class="contact__card reveal">
           <div class="contact__card-icon"><i class="fa-solid fa-envelope"></i></div>
-          <p class="contact__card-label">メール</p>
+          <h3 class="contact__card-heading">メールで相談する</h3>
           <p class="contact__card-value">***@***.***</p>
-          <a href="mailto:***@***.***" class="contact__card-link">メールを送る</a>
-        </div>
-
-        <!-- お問い合わせフォーム -->
-        <!-- TODO: 下記 href を実際のフォームURLに差し替えてください -->
-        <div class="contact__card reveal">
-          <div class="contact__card-icon"><i class="fa-solid fa-file-pen"></i></div>
-          <p class="contact__card-label">お問い合わせフォーム</p>
-          <p class="contact__card-value">必要事項を入力してお送りいただけます</p>
-          <a href="#" class="contact__card-link">フォームを開く</a>
+          <a href="mailto:***@***.***" class="contact__card-link">
+            <i class="fa-solid fa-paper-plane"></i> メールを送る
+          </a>
+          <p class="contact__card-note">24時間いつでも受け付けています</p>
         </div>
 
         <!-- LINE -->
         <div class="contact__card contact__card--line reveal">
           <div class="contact__card-icon contact__card-icon--line"><i class="fa-brands fa-line"></i></div>
-          <p class="contact__card-label">LINEで相談できます</p>
+          <h3 class="contact__card-heading">LINEで相談できます</h3>
           <div class="contact__qr">
             <img src="line-qr.png" alt="LINE友だち追加QRコード" class="contact__qr-img">
           </div>
-          <p class="contact__qr-note">スマホの方は長押し、またはLINEアプリから読み取ってご連絡ください。</p>
+          <p class="contact__qr-note">
+            スマホの方は長押し、<br>またはLINEアプリから読み取ってご連絡ください。
+          </p>
           <a href="line-qr.png" target="_blank" rel="noopener" class="contact__card-link contact__card-link--line">
             <i class="fa-brands fa-line"></i> LINEで相談する
           </a>
