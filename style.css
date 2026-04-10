@@ -385,7 +385,7 @@ mark {
   gap: 56px;
   align-items: center;
   max-width: 960px;
-  margin: 0 auto 64px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -1392,7 +1392,7 @@ mark {
   }
 
   .about__box {
-    margin-bottom: 44px;
+    margin-bottom: 0;
   }
 
   .about__illust {
